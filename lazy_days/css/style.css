@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i|Spectral:400,400i');
+
+header{
+  font-size: 40px;
+  font-family: "Open Sans";
+  background-color: #FCEE21;
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0px auto;
+  width: 1000px;
+}
+nav{
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold; 
+}
+
+h2{
+  font-size: 24px;
+  font-family: "Open Sans";
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+h3{
+  font-size: 22px;
+  font-family: "Spectral";
+  text-align: center;
+  font-style: italic;
+}
+
+img{
+  display: block;
+  margin: 0px auto;  /* 0 pixels on all sides; auto set left and right margins */
+}
+
+p{
+  font-family: "Spectral";
+  font-size: 20px;
+  margin: 0px auto;
+  width:1000px
+  /* display: block; */
+}
+
+footer{
+  background-color: #FCEE21;
+  width: 1000px;
+  margin: 0px auto;
+}
+
+hr{
+  width: 1000px;
+}
