@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway:400,600');
+
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+
+/* https://gridbyexample.com/learn/ */
+
+body {
+	font-family: "Raleway";
+	text-align: center;
+	color: #44545E; /* dark grey */
+}
+
+/* menu */
+body nav a{
+	font-size: 16px;
+	font-weight: 600;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	color: #7B98AA; /* grey blue overrule */
+}
+
+a:hover{
+	color: #44545E;
+}
+
+/* Monument */
+header h1 a{
+	text-transform: uppercase;
+	font-size: 37px;
+	text-decoration:none;
+	font-weight: 600;
+	color: white;
+
+}
+/* mountain background iage */
+header{
+	background-image: url("../images/blog_header_bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 200px;
+	padding-top: 120px;
+
+}
+
+/* date */
+article h3{
+	font-weight: 600;
+	text-align: left;
+	font-size: 18px;
+}
+
+/* visual guide to southwest */
+article h2{
+	text-align: left;
+	font-weight: 600;
+	font-size: 23px;
+	text-transform: uppercase;
+}
+
+p{
+	text-align: left; 	/* overrule body centered */
+	font-family: "Lato";
+	font-weight: 400;
+	font-size: 15px;
+}
+
+img{
+	width: 700px;
+}
+
+footer{
+	background: #CDF3F6;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	width: 700px;	/*footer width */
+}
+
+footer a{
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: "Lato";
+	font-weight: 400;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* set links style */
+footer p {
+	text-align: center;
+	text-transform: none;
+}
+
+/* set style of Sarah Holden */
+footer p a {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*set article and body to centered */
+body{
+	padding-left: 600px;
+	padding-right: 600px;
+}
+
+aside{
+	text-align: left;
+}
+
+/* heading3 */
+aside h3{
+	font-family: "Raleway";
+	font-weight: 600;
+	font-size: 18px;
+}
+
+aside p {
+	font-family: "Lato";
+	font-weight: 400;
+	font-size: 15px;
+}
+
+li{
+		font-family: "Raleway";
+		font-weight: 400;
+		font-size: 15px;
+
+}
+li a{
+		text-decoration: none;
+}
