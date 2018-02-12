@@ -1,0 +1,310 @@
+
+/* Add a link to GOOGLE FONTS LINK at the top! THis should be the first line of your stylesheet.*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway:400,600');
+
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+/* Note: Makes sure that padding and the border are included in the width for each element. */
+/* Don't add anything else under the * selector! */
+* {
+	box-sizing: border-box;
+}
+
+nav a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #44545E; /* dark grey */
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+/*Note: fix so that images will scale with their containers. We'll chat about this more when we cover responsive design*/
+img {
+	max-width: 100%;
+}
+
+body {
+	text-align: center;
+	font-family: Raleway;
+	font-weight: 600;
+	color: #44545E; /* dark grey */
+
+	/* extend full screen */
+	margin: 0;
+	width: 100%;
+}
+
+/* Monument */
+h1{
+	font-size: 37px;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: 23px;
+	text-transform: uppercase;
+}
+
+h3{
+	text-transform: uppercase;
+}
+
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+a {
+	color:#44545E;
+}
+
+a:hover{
+	color: red;
+	transition: all 1s;
+}
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+header{
+	background-image: url("../images/home_header_bg.jpg");
+
+	/* paralax */
+	background-attachment: fixed;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	padding-top: 300px;
+	padding-bottom: 300px;
+	color: white;
+
+	margin-bottom: 100px;
+/*
+	margin-bottom: 50px;
+	margin-top: 50px;
+*/
+}
+
+/* ----------------------------------------
+Articles
+------------------------------------------- */
+
+.nav-wrapper{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+nav{
+	font-size: 16px;
+	font-weight: 600;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	color: #7B98AA; /* grey blue overrule */
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 0;
+	position: fixed;
+	background-color: white;
+	width: 100%;
+}
+
+
+/* ----------------------------------------
+Articles
+------------------------------------------- */
+.article-wrapper{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+article p{
+	display:inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+p{
+	/* over rule body style */
+	font-weight: 400;
+	font-family: Lato;
+	font-size: 15px;
+}
+
+button{
+	font-family: Raleway;
+	font-weight: 600;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	background-color: inherit;
+	border-color: #44545E; /* dark grey */
+}
+
+button:hover{
+	background-color: #44545E;
+	transition: all 1s;
+	color: white;
+}
+
+/* ----------------------------------------
+About
+------------------------------------------- */
+section#About{
+	background: #CDF3F6;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+section#About p{
+	display: inline-block;
+	width: 60%
+}
+
+article button{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+section#Archive{
+	padding-bottom:100px;
+	/*width:90%;*/
+}
+
+section#issue{
+	padding-top: 100px;
+}
+
+/* ----------------------------------------
+Gallery
+------------------------------------------- */
+.gallery-wrapper{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 50px;
+}
+
+/* add opacity */
+.gallery-wrapper img:hover{
+	transition:  opacity 0.5s ease;
+	opacity: 0.6;
+}
+
+/* space between images */
+section img{
+	margin-bottom: 12px;
+}
+/* ----------------------------------------
+Gallery
+------------------------------------------- */
+
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+footer{
+	background: #CDF3F6;
+}
+
+input{
+	text-align: center;
+	text-transform: uppercase;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-right: 50px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-family: Raleway;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+/* style fontastic icons */
+i{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+i#ham{
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+i#fb{
+		transform: rotate(-15deg);
+}
+
+/*hamburger */
+.hamburger {
+	background-color: white;
+	visibility: hidden;
+}
+
+
+.footer_wrapper{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+div#sign{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h3#visual{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* media */
+@media screen and (max-width: 960px) {
+  .gallery-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+	.article-wrapper{
+		grid-template-columns: 1fr 1fr;
+	}
+
+}
+
+@media screen and (max-width: 660px) {
+  .gallery-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+	.article-wrapper{
+		display:grid;
+		grid-template-columns: 1fr;
+	}
+
+	.nav-wrapper{
+		display:grid;
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 500px) {
+  .gallery-wrapper {
+    grid-template-columns: 1fr;
+  }
+	.nav-wrapper{
+		display:grid;
+		grid-template-columns: 1fr;
+	}
+	.hamburger{
+		visibility: visible;
+	}
+
+
+}
