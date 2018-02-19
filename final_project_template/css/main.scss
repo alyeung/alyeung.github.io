@@ -1,0 +1,54 @@
+/* main.scss */
+
+/* --------------------------------------------------------------------------
+Base styles:
+----------------------------------------------------------------------------- */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Raleway;
+}
+
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
+
+.grid-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.aside-wrapper{
+	display:grid;
+	grid-template-columns: 1fr;
+}
+
+.deal-wrapper{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr; /* two rows of 3 each */
+}
+
+/* fonts */
+/* Add a link to GOOGLE FONTS LINK at the top! THis should be the first line of your stylesheet.
+
+https://fonts.google.com/specimen/Lato
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway:400,600');
+
+
+/* colors
+
+Flat UI:
+ https://color.adobe.com/Flat-UI-color-theme-2469224/?showPublished=true
+
+Uber Color Scheme:
+ http://www.color-hex.com/color-palette/11602
+
+Amazon Fire:
+https://developer.amazon.com/public/solutions/devices/fire-phone/docs/color-and-typography
+
+
+ */
