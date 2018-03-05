@@ -8,7 +8,8 @@ Base styles:
   box-sizing: border-box; }
 
 body {
-  font-family: Raleway; }
+  font-family: Raleway;
+  background-color: lightgrey; }
 
 /* Fix for responsive images */
 img {
@@ -16,7 +17,7 @@ img {
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr; }
+  grid-template-columns: 1fr 6fr 1fr; }
 
 .aside-wrapper {
   display: grid;
@@ -26,6 +27,11 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* two rows of 3 each */ }
+
+article {
+  display: block;
+  background-color: white;
+  padding: 0px 10px 0px 10px; }
 
 /* fonts */
 /* Add a link to GOOGLE FONTS LINK at the top! THis should be the first line of your stylesheet.

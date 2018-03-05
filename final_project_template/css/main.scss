@@ -10,6 +10,7 @@ Base styles:
 
 body{
   font-family: Raleway;
+  background-color: lightgrey;
 }
 
 /* Fix for responsive images */
@@ -19,7 +20,7 @@ img {
 
 .grid-wrapper{
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 6fr 1fr;
 }
 .aside-wrapper{
 	display:grid;
@@ -29,6 +30,12 @@ img {
 .deal-wrapper{
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr; /* two rows of 3 each */
+}
+
+article{
+    display:block;
+    background-color: white;
+    padding: 0px 10px 0px 10px;
 }
 
 /* fonts */
