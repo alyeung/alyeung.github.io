@@ -6,6 +6,7 @@ git clone https://github.com/alyeung/alyeung.github.io.git
 
 Install SASS: https://sass-lang.com/install
 gem install sass
+sass --watch input.scss output.css
 
 GIT:
 CodeCommit Specific: https://docs.aws.amazon.com/codecommit/latest/userguide/getting-started.html
