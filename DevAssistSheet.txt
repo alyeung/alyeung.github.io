@@ -1,0 +1,10 @@
+https://help.github.com/articles/setting-your-username-in-git/
+Git config --global user.name "Name"
+Git config --global user.email "email"
+
+git clone https://github.com/alyeung/alyeung.github.io.git
+
+Install SASS: https://sass-lang.com/install
+gem install sass
+
+
