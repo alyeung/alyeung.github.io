@@ -31,7 +31,10 @@ img {
 article {
   display: block;
   background-color: white;
-  padding: 0px 10px 0px 10px; }
+  padding: 10px 10px 10px 10px;
+  /* white border around article */
+  margin: 15px 15px;
+  /* article to article spacing, adds grey */ }
 
 /* fonts */
 /* Add a link to GOOGLE FONTS LINK at the top! THis should be the first line of your stylesheet.
