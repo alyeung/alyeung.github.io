@@ -7,4 +7,14 @@ git clone https://github.com/alyeung/alyeung.github.io.git
 Install SASS: https://sass-lang.com/install
 gem install sass
 
+GIT:
+CodeCommit Specific: https://docs.aws.amazon.com/codecommit/latest/userguide/getting-started.html
+https://help.github.com/articles/adding-a-file-to-a-repository-using-the-command-line/
+https://stackoverflow.com/questions/5697750/what-exactly-does-the-u-do-git-push-u-origin-master-vs-git-push-origin-ma
 
+git add -A
+
+git commit -m "comment"
+
+git push -u origin master
+git --help push
