@@ -64,8 +64,11 @@
     $('h2').slideDown('fast'); 
   // BONUS: If you completed the above bonus tasks, look up "remove jquery"
   // and then see if you can remove the paragraphs and h3s that you added in.
-    $('.add-para p').empty();
+    //$('.add-para p').empty();  // removes child
+    $('.add-para p').remove();
+    
   // make sure to ONLY remove those paragraphs and h3s you added, not all the paragraphs and h3s!
-  $('#box12 h4').empty();
+  //$('#box12 h4').empty(); // removes childs
+  $('#box12 h4').remove();
   })
 
