@@ -101,7 +101,7 @@ nav li:first-child {
 .sidebar {
 	/* STEP #1: Right now the sidebar is always showing!
   How can we move it off screen by default? Hint: look up translateX*/
- transform: translateX(-100%);
+ transform: translateX(-300px);
   
   /* STEP #4 (Wait until you've tested everything else):
   How can we make the sidebar animate from the side, instead of jumping right away? */
@@ -112,7 +112,10 @@ nav li:first-child {
 .active {
 	/*	STEP #2: When the active class gets added to the sidebar,
   we want to move the sidebar back on screen using the transform property (translateX). */
-  transform: translateX(100%);
+  transform: translateX(300px);
+  
+    transition: all 0.5s ease-in-out;
+
 }
 
 /*	Step #3 (in main.js): Write your JS to add and remove the active class you created above!
