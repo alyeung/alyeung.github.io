@@ -40,6 +40,19 @@ article p {
 .modal-background {
   padding: 40px;
   background-color: rgba(0, 0, 0, .3);
+  /* chapter 7 */
+  position: fixed; /* stays in place while user scrolls */
+  
+  /* https://stackoverflow.com/questions/28080910/what-does-top-0-left-0-bottom-0-right-0-mean */
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* use flexbox Google: https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
 }
 
@@ -49,3 +62,4 @@ article p {
   background-color: white;
   width: 60%;
 }
+
