@@ -114,7 +114,7 @@ nav li:first-child {
   we want to move the sidebar back on screen using the transform property (translateX). */
   transform: translateX(300px);
   
-    transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
 }
 
