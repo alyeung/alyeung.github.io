@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  height: 600px;
+  min-height: 400px;
+  padding: 100px 1%;
+  text-align: center;
+  background-color: #F95758;
+  position: relative;
+}
+
+header h1 {
+  color: white;
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #F95758;
+  text-align: center;
+}
+
+article {
+  padding: 1rem;
+}
+
+p {
+  font-family: 'Lora', serif;
+  color: #222;
+  font-size: 25px;
+  padding: 0 3rem;
+  text-align: justify;
+}
+
+#flybug {
+  text-align: center;
+}
+
+
+/* ---------------------------------------------------------
+		M A I N   N A V   S T Y L E S
+---------------------------------------------------------- */
+nav {
+  width: 100%;
+  text-align: center;
+  transition: all 300ms ease-out;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  display: inline-block;
+  margin: 1rem;
+  padding: .25rem 0;
+  text-decoration: none;
+  color: white;
+  transition: all .3s ease-in-out;
+}
+
+
+.scrolled {
+  /* PART 1a: Write styles here that you want to store and then add in JS when the user scrolls
+  example: maybe change the background color to white */
+  
+  background-color: white;
+
+
+
+}
+
+.scrolled a {
+  /* PART 1b: Write styles here for the anchors in the nav once it is scrolled
+  (example: maybe change the color for the anchors so they're grey) */
+  color: darkgrey;
+}
+
+/*Step #2 is in the JS file!*/
+
+
+/* ---------------------------------------------------------
+    F L Y B U G
+  ---------------------------------------------------------- */
+img {
+  width: 175px;
+}
+
+.flybug,
+.butterfly {
+  width: 400px;
+  display: block;
+  margin: 50px auto 30px;
+}
+
+.bug-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.label-1,
+.label-2,
+.label-3 {
+  position: absolute;
+  opacity: 0;
+}
+
+.label-1 {
+  top: 148px;
+  right: -116px;
+}
+
+.label-2 {
+  top: 300px;
+  left: -116px;
+}
+
+.label-3 {
+  top: 420px;
+  right: -156px;
+}
+
+.labelshow{
+  opacity: 1;
+  transition: all .5s ease-in-out; 
+}
+
+
+/* ---------------------------------------------------------
+    B U T T E R F L Y
+  ---------------------------------------------------------- */
+.butterfly {
+  width: 600px;
+  /* PART 3: Uncomment the following code to hide the
+  butterfly and move it slightly to the left by default.*/
+  transform: translateX(-20%);
+  opacity: 0;
+  transition: all .5s ease-in-out; 
+}
+
+
+.animated {
+  /* PART 3: Add the animated class to the .butterfly when the user has scrolled to that section of the page. */
+  /* Here, when the animated class gets added, we want to update the opacity to 1
+  and move the butterfly into place by using translateX to set the X-axis to 0. You'll need to add CSS below to do so.*/
+  opacity: 1;
+  transform: translateX(20%);
+}
