@@ -6,27 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
+
+<!--
+*Bonus* Try logging the information from the form to the console!
+
+*Bonus 2* Check to make sure the user has entered information into each field. 
+If they have not added information to each field, don’t let them submit the form and add an alert under the associated field telling the user what needs to be changed!
+
+*Bonus 3* Check to make sure that the user has added the correct type of data in the 
+_EMAIL_ and _PHONE NUMBER_ fields. If they have not, under the associated field, 
+tell the user what they need to do!
+-->
 <body>
   <form action="">
     <fieldset>
       <legend>Your Contact Info</legend>
+
+      <label for="name">Full Name</label>
+      <input type="text" placeholder="Enter your name" id="name">      
+  
+      <label for="email">Email</label>
+      <input type="text" placeholder="Enter your email" id="email">  
+      
+      <label for="phone">Phone Number</label>
+      <input type="text" placeholder="Enter your phone number" id="phone">  
+    
+    <hr>
     </fieldset>
+    
+    
+
 
     <fieldset>
       <legend>Skills and Interests</legend>
+    
+      <label for="course">What course are you interested in?</label>
+      <select name ="course">
+        <option value="Javascript">Javascript</option>
+        <option value="FEWD">Front End Development</option>
+        <option value="Marketing">Digital Marketing</option>
+      </select>
+      
+      <label for="city">Where do you want to take the course?</label>
+      <label for="sf">San Francisco</label>
+      <input type="radio" name="city" value="sf" id="sf">
+      <label for="ch">Chicago</label>
+      <input type="radio" name="city" value="ch" id="ch">
+    
+      <label for="past">Past Experience</label>
+      <textarea name="past" placeholder="What is your past experience?"></textarea>
     </fieldset>
 
-    <button type="submit">Submit Application</button>
+    <hr>
+    <label for="updates">I want to receive updates</label>
+    <input type="checkbox" id="updates">
+
+    <button type="submit" id="submit">Submit Application</button>
   </form>
 
 
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
   <script src="js/main.js"></script>
 
