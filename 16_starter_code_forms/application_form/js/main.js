@@ -7,6 +7,29 @@ $('#submit').on('click', function() {
     //console.log(course);
     var name = $("#name").val();
     
- //   var email = ${"#"
+    var email = $("#email").val();
+    
+    var phone = $("#phone").val();
+    
+    var course = $("#course").val();
+    
+    var city = $("#city").val();
+    
+    var past = $("#past").val();
+    
+    // need to handle checkbox
+    
+    // output
     console.log(name);
+    
+    console.log(email);
+    
+    console.log(phone);
+    
+    console.log(course);
+    
+    console.log(city);
+    
+    console.log(past);
+    
 })
