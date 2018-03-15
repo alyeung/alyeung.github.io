@@ -47,6 +47,9 @@ tell the user what they need to do!
     
       <label for="course">What course are you interested in?</label>
       <select name ="course" id ="course">
+        
+        <!-- https://stackoverflow.com/questions/5212939/how-do-i-set-an-un-selectable-default-description-in-a-select-drop-down-menu-i-->
+        <option selected="selected" disabled hidden>Select</option>
         <option value="Javascript">Javascript</option>
         <option value="Front End Development">Front End Development</option>
         <option value="Product Management">Product Management</option>
