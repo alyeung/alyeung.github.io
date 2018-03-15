@@ -14,16 +14,10 @@ tell the user what they need to do!
 $('#submit').on('click', function() {
     event.preventDefault();
     
-    
-    // console log
-    console.log("Console Log Stuff:");
-    //console.log(course);
+    // capture data on click
     var name = $("#name").val();
-    
     var email = $("#email").val();
-    
     var phone = $("#phone").val();
-    
     var course = $("#course").val();
     
     
@@ -39,33 +33,35 @@ $('#submit').on('click', function() {
     else{
         city="I don't know"
     }
-    
+
     var past = $("#past").val();
+    
+    // on or off, handle the checkbox for updates
+    var updates = $("#updates").val();
     var response = "not set";
-    if (past === "on"){
+    if (updates === "on"){
         response = "yes"
     }
-    else{
+    else{ // checkbox was not selected
         response = "no"
     }
     
-    // on or off
-    var updates = $("#updates").val();
+    // if not null
+    if(name){
+      // console log
+        console.log("Console Log Stuff:");      
+        console.log("Name is: " + name);
+        console.log("Email is: " + email);
+        console.log("Phone Number is: " + phone);
+        console.log("Course of interest is: " + course);
+        console.log("City to take course: " + city);
+        console.log("Past experience is as follows: " + past);
+        console.log("I want to receive updates: " + response);
+    }
+    // else something was not defined
+    else{
+        // add alert under name field or show alert message
+        console.log("Name is not defined");
+    }
     
-    // need to handle checkbox
-    
-    // output
-    console.log("Name is: " + name);
-    
-    console.log("Email is: " + email);
-    
-    console.log("Phone Number is: " + phone);
-    
-    console.log("Course of interest is: " + course);
-    
-    console.log("City to take course: " + city);
-    
-    console.log("Past experience is as follows: " + past);
-    
-    console.log("I would like to receive updates: " + response);
 })
