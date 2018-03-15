@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 15px;
+	font-family: 'Nunito', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: #74ebd5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #005EC8;
+	letter-spacing: .06em;
+}
+
+/* ----------------------------------------
+Form
+------------------------------------------- */
+form {
+	background-color: white;
+	margin: 30px auto;
+	max-width: 700px;
+	padding: 20px;
+	border-radius: 3px;
+
+}
+
+input {
+  	display:block;
+  	width: 100%;
+  	color:#929CA2;
+}
+
+
+button {
+ 	display:block;
+ 	width: 100%;
+ 	background-color: #44545E;
+ 	color: white;
+}
+
+textarea {
+  width: 100%;
+  color:#929CA2;
+  
+}
