@@ -45,31 +45,48 @@ tell the user what they need to do!
     <fieldset>
       <legend>Skills and Interests</legend>
     
-      <label for="course">What course are you interested in?</label>
-      <select name ="course" id ="course">
+        <section class="grid-wrapper">
+          <div>
+            <label for="course">What course are you interested in?</label>
+          </div>
+          <div>
+            <select name ="course" id ="course">
+              
+              <!-- https://stackoverflow.com/questions/5212939/how-do-i-set-an-un-selectable-default-description-in-a-select-drop-down-menu-i-->
+              <option selected="selected" disabled hidden>Select</option>
+              <option value="Javascript">Javascript</option>
+              <option value="Front End Development">Front End Development</option>
+              <option value="Product Management">Product Management</option>
+            </select>
+          </div>
         
-        <!-- https://stackoverflow.com/questions/5212939/how-do-i-set-an-un-selectable-default-description-in-a-select-drop-down-menu-i-->
-        <option selected="selected" disabled hidden>Select</option>
-        <option value="Javascript">Javascript</option>
-        <option value="Front End Development">Front End Development</option>
-        <option value="Product Management">Product Management</option>
-      </select>
-      
-      <label for="city">Where do you want to take the course?</label>
-      <label for="sf">San Francisco</label>
-      <input type="radio" name="city" value="San Francisco" id="sf">
-      <label for="ch">Chicago</label>
-      <input type="radio" name="city" value="Chicago" id="ch">
+        
+          <div>
+            <label for="city">Where do you want to take the course?</label>
+          </div>
+          <div>
+            <label for="sf">San Francisco</label>
+            <input type="radio" name="city" value="San Francisco" id="sf">
+            <label for="ch">Chicago</label>
+            <input type="radio" name="city" value="Chicago" id="ch">
+          </div>
+        </section>
     
       <label for="past">Past Experience</label>
       <textarea name="past" placeholder="What is your past experience?" id="past"></textarea>
     </fieldset>
 
     <hr>
+
+    <section class ="grid-wrapper">
+      <div>
     <label for="updates">I want to receive updates</label>
     <input type="checkbox" id="updates">
-
+</div>
+<div>
     <button type="submit" id="submit">Submit Application</button>
+    </div>
+    </section>
   </form>
 
 

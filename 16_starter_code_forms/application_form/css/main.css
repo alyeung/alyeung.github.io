@@ -23,14 +23,68 @@ form {
 	
 }
 
-label, input, select, textarea{
-	display: block;
-	width: 100%;
-	padding: 10px;
+/* style input header forms */
+legend{
+	text-transform: uppercase;
+	font-family: 'Oswald';
+	font-size: 22px;
+	padding-bottom: 15px;
 }
 
+/* hide border */
+fieldset{
+	border: 0px;
+}
+
+label{
+	padding-left: 0px;
+}
+
+/* style input text fields */
+input[type=text]{
+	padding: 10px; /* tabbed in */
+	width: 100%;
+	margin-top: 10px;	/* space out input and labels */
+	margin-bottom: 10px;
+}
+
+/* style selector drop down fields */
+select{
+	margin-top: 10px;	/* space out selector */
+	margin-bottom: 10px;
+}
+
+/* style radio buttons */
+input[type=radio]{
+	margin-top: 10px;	/* space out vertically */
+	margin-bottom: 20px;
+	margin-left: 10px;	/* space out radio buttons horizontally */
+	margin-right:10px;
+}
+
+/* style text area */
+textarea{
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+}
+
+/* style the selection button */
 button{
 	background-color: brown;
 	color: white;
 	padding: 10px 10px 10px 10px;
+	margin-top: 30px;
+}
+
+/* style horizontal rule */
+hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* skills interest grid wrapper */
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr; 
 }
