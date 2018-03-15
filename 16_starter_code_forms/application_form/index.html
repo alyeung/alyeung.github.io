@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
   <meta charset="utf-8">
   <title></title>
@@ -12,45 +13,36 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<!--
-*Bonus* Try logging the information from the form to the console!
 
-*Bonus 2* Check to make sure the user has entered information into each field. 
-If they have not added information to each field, don’t let them submit the form and add an alert under the associated field telling the user what needs to be changed!
-
-*Bonus 3* Check to make sure that the user has added the correct type of data in the 
-_EMAIL_ and _PHONE NUMBER_ fields. If they have not, under the associated field, 
-tell the user what they need to do!
--->
 <body>
   <form action="">
     <fieldset>
       <legend>Your Contact Info</legend>
 
       <label for="name">Full Name</label>
-      <input type="text" placeholder="Enter your name" id="name">      
-  
+      <input type="text" placeholder="Enter your name" id="name">
+
       <label for="email">Email</label>
-      <input type="text" placeholder="Enter your email" id="email">  
-      
+      <input type="text" placeholder="Enter your email" id="email">
+
       <label for="phone">Phone Number</label>
-      <input type="text" placeholder="Enter your phone number" id="phone">  
-    
-    <hr>
+      <input type="text" placeholder="Enter your phone number" id="phone">
+
+      <hr>
     </fieldset>
-    
-    
+
+
 
 
     <fieldset>
       <legend>Skills and Interests</legend>
-    
-        <section class="grid-wrapper">
-          <div>
-            <label for="course">What course are you interested in?</label>
-          </div>
-          <div>
-            <select name ="course" id ="course">
+
+      <section class="grid-wrapper">
+        <div>
+          <label for="course">What course are you interested in?</label>
+        </div>
+        <div>
+          <select name="course" id="course">
               
               <!-- https://stackoverflow.com/questions/5212939/how-do-i-set-an-un-selectable-default-description-in-a-select-drop-down-menu-i-->
               <option selected="selected" disabled hidden>Select</option>
@@ -58,42 +50,45 @@ tell the user what they need to do!
               <option value="Front End Development">Front End Development</option>
               <option value="Product Management">Product Management</option>
             </select>
-          </div>
-        
-        
-          <div>
-            <label for="city">Where do you want to take the course?</label>
-          </div>
-          <div>
-            <label for="sf">San Francisco</label>
-            <input type="radio" name="city" value="San Francisco" id="sf">
-            <label for="ch">Chicago</label>
-            <input type="radio" name="city" value="Chicago" id="ch">
-          </div>
-        </section>
-    
+        </div>
+
+
+        <div>
+          <label for="city">Where do you want to take the course?</label>
+        </div>
+        <div>
+          <label for="sf">San Francisco</label>
+          <input type="radio" name="city" value="San Francisco" id="sf">
+          <label for="ch">Chicago</label>
+          <input type="radio" name="city" value="Chicago" id="ch">
+        </div>
+      </section>
+
       <label for="past">Past Experience</label>
       <textarea name="past" placeholder="What is your past experience?" id="past"></textarea>
     </fieldset>
 
     <hr>
 
-    <section class ="grid-wrapper">
+    <section class="grid-wrapper">
       <div>
-    <label for="updates">I want to receive updates</label>
-    <input type="checkbox" id="updates">
-</div>
-<div>
-    <button type="submit" id="submit">Submit Application</button>
-    </div>
+        <label for="updates">I want to receive updates</label>
+        <input type="checkbox" id="updates">
+      </div>
+      <div>
+        <button type="submit" id="submit">Submit Application</button>
+      </div>
     </section>
   </form>
 
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+  </script>
   <script src="js/main.js"></script>
 
 </body>
+
 </html>

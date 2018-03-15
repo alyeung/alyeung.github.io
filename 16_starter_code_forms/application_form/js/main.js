@@ -1,5 +1,16 @@
 /* global $*/
 
+/*
+*Bonus* Try logging the information from the form to the console!
+
+*Bonus 2* Check to make sure the user has entered information into each field. 
+If they have not added information to each field, don’t let them submit the form and add an alert under the associated field telling the user what needs to be changed!
+
+*Bonus 3* Check to make sure that the user has added the correct type of data in the 
+_EMAIL_ and _PHONE NUMBER_ fields. If they have not, under the associated field, 
+tell the user what they need to do!
+*/
+
 $('#submit').on('click', function() {
     event.preventDefault();
     
