@@ -38,7 +38,13 @@ form {
 input {
   	display:block;
   	width: 100%;
-  	color:#929CA2;
+  	/* color is black once entered */
+  	color:black;
+}
+
+/* style placeholder color */
+input::placeholder, textarea::placeholder{
+	color:#929CA2;
 }
 
 
@@ -52,5 +58,7 @@ button {
 textarea {
   width: 100%;
   color:#929CA2;
+  height: 80px;
+  resize: none;
   
 }
