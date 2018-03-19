@@ -34,9 +34,6 @@ Base styles:
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
 
 body{
   font-family: Raleway;
@@ -52,6 +49,7 @@ img {
 .blog-post{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 60%; /* ensure the article does not consume the whole page width */
 }
 
 .grid-wrapper{
@@ -72,7 +70,8 @@ article{
     display:block;
     background-color: white;
     padding: 10px 10px 10px 10px; /* white border around article */
-    margin: 15px 15px; /* article to article spacing, adds grey */
+    /*margin: 15px 15px;  article to article spacing, adds grey */
+    margin: 30px auto; /* center articles */
 }
 
 /* blog.html */
