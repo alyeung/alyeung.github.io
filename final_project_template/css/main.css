@@ -1,4 +1,15 @@
 /* main.scss */
+/* colors
+
+Flat UI:
+ https://color.adobe.com/Flat-UI-color-theme-2469224/?showPublished=true
+
+Uber Color Scheme:
+ http://www.color-hex.com/color-palette/11602
+
+Amazon Fire:
+https://developer.amazon.com/public/solutions/devices/fire-phone/docs/color-and-typography
+*/
 /* --------------------------------------------------------------------------
 Base styles:
 ----------------------------------------------------------------------------- */
@@ -58,12 +69,12 @@ article {
   margin-bottom: 6px; }
 
 .line:last-child {
-  margin-bottom: 0; }
+  margin-bottom: 10px; }
 
 nav {
   width: 300px;
   height: 100%;
-  background-color: #48a770;
+  background-color: #3399CC;
   position: fixed;
   top: 0;
   left: 0;
@@ -72,13 +83,16 @@ nav {
 nav h2 {
   padding: 1.5rem 1rem 0; }
 
+h2 {
+  color: rgba(0, 0, 0, 0.4); }
+
 li {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   list-style: none;
   transition: all 300ms ease-in-out; }
 
 li:hover {
-  background-color: #409564; }
+  background-color: #3090c0; }
 
 nav a {
   color: white;
@@ -113,23 +127,33 @@ nav li:first-child {
   transform: translateX(300px);
   transition: all 0.5s ease-in-out; }
 
+/* modal */
+.modal-background {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* chapter 7 */
+  position: fixed;
+  /* stays in place while user scrolls */
+  /* https://stackoverflow.com/questions/28080910/what-does-top-0-left-0-bottom-0-right-0-mean */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* use flexbox Google: https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.modal-content {
+  padding: 40px 20px;
+  color: #444;
+  background-color: white;
+  width: 60%; }
+
 /* fonts */
 /* Add a link to GOOGLE FONTS LINK at the top! THis should be the first line of your stylesheet.
 
 https://fonts.google.com/specimen/Lato
 */
-/* colors
-
-Flat UI:
- https://color.adobe.com/Flat-UI-color-theme-2469224/?showPublished=true
-
-Uber Color Scheme:
- http://www.color-hex.com/color-palette/11602
-
-Amazon Fire:
-https://developer.amazon.com/public/solutions/devices/fire-phone/docs/color-and-typography
-
-
- */
 
 /*# sourceMappingURL=main.css.map */

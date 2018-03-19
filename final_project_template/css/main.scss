@@ -1,5 +1,21 @@
 /* main.scss */
 
+/* colors
+
+Flat UI:
+ https://color.adobe.com/Flat-UI-color-theme-2469224/?showPublished=true
+
+Uber Color Scheme:
+ http://www.color-hex.com/color-palette/11602
+
+Amazon Fire:
+https://developer.amazon.com/public/solutions/devices/fire-phone/docs/color-and-typography
+*/
+$amzn-blue: #3399CC;
+$amzn-orange: #FF6600;
+$amzn-grey: #666666;
+$amzn-lt-grey: #F8F8F8;
+
 /* --------------------------------------------------------------------------
 Base styles:
 ----------------------------------------------------------------------------- */
@@ -64,13 +80,13 @@ article{
 }
 
 .line:last-child {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 nav {
   width: 300px;
   height: 100%;
-  background-color: #48a770;
+  background-color: $amzn-blue;
   position: fixed;
   top: 0;
   left: 0;
@@ -81,6 +97,10 @@ nav h2 {
   padding: 1.5rem 1rem 0;
 }
 
+h2{
+    color: rgba(0, 0, 0, 0.4);
+}
+
 li {
   border-top: 1px solid rgba(0,0,0,0.2);
   list-style: none;
@@ -88,7 +108,8 @@ li {
 }
 
 li:hover {
-  background-color: #409564;
+  //background-color: #409564;
+  background-color: darken($amzn-blue, 3%);
 }
 
 nav a {
@@ -133,6 +154,33 @@ nav li:first-child {
 
 }
 
+/* modal */
+.modal-background {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, .3);
+  /* chapter 7 */
+  position: fixed; /* stays in place while user scrolls */
+  
+  /* https://stackoverflow.com/questions/28080910/what-does-top-0-left-0-bottom-0-right-0-mean */
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* use flexbox Google: https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  padding: 40px 20px;
+  color: #444;
+  background-color: white;
+  width: 60%;
+}
+
+
 /* fonts */
 /* Add a link to GOOGLE FONTS LINK at the top! THis should be the first line of your stylesheet.
 
@@ -141,16 +189,4 @@ https://fonts.google.com/specimen/Lato
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway:400,600');
 
 
-/* colors
 
-Flat UI:
- https://color.adobe.com/Flat-UI-color-theme-2469224/?showPublished=true
-
-Uber Color Scheme:
- http://www.color-hex.com/color-palette/11602
-
-Amazon Fire:
-https://developer.amazon.com/public/solutions/devices/fire-phone/docs/color-and-typography
-
-
- */

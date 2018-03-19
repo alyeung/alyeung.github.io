@@ -20,6 +20,23 @@
     });
     // add a class so the sidebar slides back to left
     // hamburger is shown
+    
+// blog: actions
+
+// hide the modal
+$('.modal-background').hide();
+
+// when click to read more for cloud 9
+$('#showCloud9').on('click', function(){
+    $('.modal-background').show();
+})
+    // modal shows up
+
+// when click on close
+$('#close').on('click', function(){
+    $('.modal-background').hide();
+})
+    // modal is hidden
 
 // Make it rain!
 
