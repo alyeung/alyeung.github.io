@@ -171,6 +171,21 @@ nav li:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  text-align: center; /*center button and content in modal */
+  
+  /* modal button styling */
+  button{
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white; /*text color */
+    border: none;
+    outline: none;
+    background-color: $amzn-blue;
+    border-radius: 3px;
+    margin: 100px 0;
+  }
 }
 
 .modal-content {

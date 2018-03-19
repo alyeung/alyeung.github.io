@@ -142,7 +142,21 @@ nav li:first-child {
   /* use flexbox Google: https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  text-align: center;
+  /*center button and content in modal */
+  /* modal button styling */ }
+  .modal-background button {
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    /*text color */
+    border: none;
+    outline: none;
+    background-color: #3399CC;
+    border-radius: 3px;
+    margin: 100px 0; }
 
 .modal-content {
   padding: 40px 20px;
