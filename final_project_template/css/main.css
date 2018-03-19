@@ -1,4 +1,5 @@
 /* main.scss */
+/* how to use SASS + benefits: https://sass-lang.com/guide */
 /* colors
 
 Flat UI:
@@ -28,6 +29,11 @@ body {
 /* Fix for responsive images */
 img {
   max-width: 100%; }
+
+/* style blog post picture side by side */
+.blog-post {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
 
 .grid-wrapper {
   display: grid;

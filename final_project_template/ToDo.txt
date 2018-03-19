@@ -8,3 +8,6 @@ Get Favicon to work
 
 style modal button and background
 
+add floating white text to video banner on blog page 
+
+add in images to blog
