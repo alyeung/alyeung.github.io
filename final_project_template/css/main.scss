@@ -1,6 +1,14 @@
 /* main.scss */
 
 
+
+/* fonts */
+/* Add a link to GOOGLE FONTS LINK at the top! THis should be the first line of your stylesheet.
+
+https://fonts.google.com/specimen/Lato
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway:400,600');
+
 /* how to use SASS + benefits: https://sass-lang.com/guide */ 
 /* colors
 
@@ -203,13 +211,21 @@ nav li:first-child {
   width: 60%;
 }
 
+/* media query for responsiveness */
+@media screen and (max-width: 660px){
+  .blog-post{
+    display: grid;
+    grid-template-columns: 1fr; /* make vertically tiled */
+  }
+  
+  /* handle when the screen is quite tiny we cannot afford to have the width be 60% */
+  .modal-content{
+    width: 97%;
+  }
+  
+  /* style modal boxes */
+}
 
-/* fonts */
-/* Add a link to GOOGLE FONTS LINK at the top! THis should be the first line of your stylesheet.
-
-https://fonts.google.com/specimen/Lato
-*/
-@import url('https://fonts.googleapis.com/css?family=Lato|Raleway:400,600');
 
 
 

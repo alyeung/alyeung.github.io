@@ -1,4 +1,10 @@
 /* main.scss */
+/* fonts */
+/* Add a link to GOOGLE FONTS LINK at the top! THis should be the first line of your stylesheet.
+
+https://fonts.google.com/specimen/Lato
+*/
+@import url("https://fonts.googleapis.com/css?family=Lato|Raleway:400,600");
 /* how to use SASS + benefits: https://sass-lang.com/guide */
 /* colors
 
@@ -15,7 +21,6 @@ https://developer.amazon.com/public/solutions/devices/fire-phone/docs/color-and-
 Base styles:
 ----------------------------------------------------------------------------- */
 /* Fix to include padding and border in the total width for each element */
-@import url("https://fonts.googleapis.com/css?family=Lato|Raleway:400,600");
 * {
   box-sizing: border-box; }
 
@@ -170,10 +175,17 @@ nav li:first-child {
   background-color: white;
   width: 60%; }
 
-/* fonts */
-/* Add a link to GOOGLE FONTS LINK at the top! THis should be the first line of your stylesheet.
+/* media query for responsiveness */
+@media screen and (max-width: 660px) {
+  .blog-post {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* make vertically tiled */ }
 
-https://fonts.google.com/specimen/Lato
-*/
+  /* handle when the screen is quite tiny we cannot afford to have the width be 60% */
+  .modal-content {
+    width: 97%; }
+
+  /* style modal boxes */ }
 
 /*# sourceMappingURL=main.css.map */
