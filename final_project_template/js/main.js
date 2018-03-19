@@ -24,19 +24,34 @@
 // blog: actions
 
 // hide the modal
-$('.modal-background').hide();
+$('#cloud9').hide();
+$('#codeCommit').hide();
 
 // when click to read more for cloud 9
 $('#showCloud9').on('click', function(){
-    $('.modal-background').show();
-})
     // modal shows up
+    $('#cloud9').show();
+});
+
 
 // when click on close
 $('#close').on('click', function(){
-    $('.modal-background').hide();
-})
+    //$('.modal-background').hide();
     // modal is hidden
+    $('#cloud9').hide();
+    
+});
+    
+// handle code commit dialog open
+$('#showCodeCommit').on('click', function(){
+    $('#codeCommit').show();
+});
+
+// and close
+$('#close2').on('click', function(){
+    $('#codeCommit').hide();
+    
+});
 
 // Make it rain!
 
