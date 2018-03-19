@@ -24,33 +24,54 @@
 // blog: actions
 
 // hide the modal
-$('#cloud9').hide();
-$('#codeCommit').hide();
+$('#cloud9Modal').hide();
+$('#codeCommitModal').hide();
+$('#lambdaModal').hide();
+$('#postmanModal').hide();
+
 
 // when click to read more for cloud 9
 $('#showCloud9').on('click', function(){
     // modal shows up
-    $('#cloud9').show();
+    $('#cloud9Modal').show();
 });
 
 
 // when click on close
-$('#close').on('click', function(){
+$('#cloud9CloseButton').on('click', function(){
     //$('.modal-background').hide();
     // modal is hidden
-    $('#cloud9').hide();
-    
+    $('#cloud9Modal').hide();
 });
     
 // handle code commit dialog open
 $('#showCodeCommit').on('click', function(){
-    $('#codeCommit').show();
+    $('#codeCommitModal').show();
 });
 
 // and close
-$('#close2').on('click', function(){
-    $('#codeCommit').hide();
-    
+$('#codeCommitCloseButton').on('click', function(){
+    $('#codeCommitModal').hide();
+});
+
+// handle lambda dialog open
+$('#showLambda').on('click', function(){
+    $('#lambdaModal').show();
+});
+
+// and close
+$('#lambdaCloseButton').on('click', function(){
+    $('#lambdaModal').hide();
+});
+
+// handle lambda dialog open
+$('#showPostman').on('click', function(){
+    $('#postmanModal').show();
+});
+
+// and close
+$('#postmanCloseButton').on('click', function(){
+    $('#postmanModal').hide();
 });
 
 // Make it rain!

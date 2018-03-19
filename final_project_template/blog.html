@@ -96,7 +96,7 @@
             <h3>by Allan Yeung | on 16 MAR 2018 | <i class="fas fa-comment"></i> Comments | <i class="fas fa-share"></i>Share</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [...]</p>
             
-            <button>Read More</button>
+            <button type="button" id="showLambda">Read More</button>
         </div>
     </article>
     
@@ -113,7 +113,7 @@
             <h3>by Allan Yeung | on 16 MAR 2018 | <i class="fas fa-comment"></i> Comments | <i class="fas fa-share"></i>Share</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [...]</p>
             
-            <button>Read More</button>
+            <button type="button" id="showPostman">Read More</button>
         </div>
     </article>
     
@@ -122,27 +122,49 @@
     <!-- arrow -->
     <button><i class="fas fa-long-arrow-alt-left"></i> Older posts</button>
     
-    <!-- cloud 9 -->
-    <div class="modal-background" id="cloud9">
+    <!-- cloud 9 pop up window-->
+    <div class="modal-background" id="cloud9Modal">
         <div class="modal-content">
           <h3>About AWS Cloud 9</h3>  
           <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <!-- youtube --> 
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/FvclLeg2vEQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <button id="close">Close</button>
+          <iframe width="380" height="214" src="https://www.youtube.com/embed/FvclLeg2vEQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <button id="cloud9CloseButton">Close</button>
         </div>
     </div>
     
-    <!-- code commit -->
-    <div class="modal-background" id="codeCommit">
+    <!-- code commit pop up window-->
+    <div class="modal-background" id="codeCommitModal">
         <div class="modal-content">
           <h3>About AWS CodeCommit</h3>  
           <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <!-- youtube --> 
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/46PRLMW8otg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <button id="close2">Close</button>
+          <iframe width="380" height="214" src="https://www.youtube.com/embed/46PRLMW8otg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <button id="codeCommitCloseButton">Close</button>
         </div>
     </div>
+    
+    <!-- lambda pop up window -->
+    <div class="modal-background" id="lambdaModal">
+        <div class="modal-content">
+          <h3>About AWS Lambda</h3>  
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <!-- youtube --> 
+          <iframe width="380" height="214" src="https://www.youtube.com/embed/eOBq__h4OJ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <button id=lambdaCloseButton>Close</button>
+        </div>
+    </div>
+    
+    <!-- postman api window -->
+    <div class="modal-background" id="postmanModal">
+        <div class="modal-content">
+          <h3>About Postman</h3>  
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <!-- youtube --> 
+          <iframe width="380" height="214" src="https://www.youtube.com/embed/pfoKFaHisbY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <button id="postmanCloseButton">Close</button>
+        </div>
+    </div>    
     
     <!-- javascript -->
     <script src="js/jquery-1.12.0.min.js"></script>
