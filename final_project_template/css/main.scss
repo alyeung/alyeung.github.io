@@ -219,7 +219,7 @@ nav li:first-child {
 .modal-content {
   padding: 40px 20px;
   color: #444;
-  background-color: white;
+  background-color: $amzn-white;
   width: 60%;
 }
 
@@ -275,6 +275,12 @@ textarea{
 
 .feedback-background{
   background-color: $amzn-lt-grey;
+}
+.contact-tile-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 60%;
+  
 }
 
 /* media query for responsiveness */
