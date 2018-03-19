@@ -35,6 +35,10 @@ Base styles:
   box-sizing: border-box;
 }
 
+/* this helps the slide in menu to be full height of the browser window/body */
+html, body {
+    height: 100%;
+}
 
 body{
   font-family: Raleway;
@@ -267,6 +271,10 @@ textarea{
 .feedback-wrapper{
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.feedback-background{
+  background-color: $amzn-lt-grey;
 }
 
 /* media query for responsiveness */
