@@ -1,7 +1,25 @@
+/* global $*/
 ///////////////
 // Feedback from Bryan: must have & nice, wish I have to have so we don't get stuck.
 // !!!!!!!!!!!!!!!!!(no hover on mobile devices ***** )
 //////////////
+
+// when click on hamburger 
+  $('.hamburger').on('click', function(){
+    $('body').addClass('active');
+    $('.hamburger').hide();
+  });
+
+    //bring out the side bar
+    
+
+// when the side bar is open, click on the X
+    $('.close').on('click', function(){
+        $('body').removeClass('active');
+        $('.hamburger').show();
+    });
+    // add a class so the sidebar slides back to left
+    // hamburger is shown
 
 // Make it rain!
 

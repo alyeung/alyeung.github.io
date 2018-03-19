@@ -6,7 +6,7 @@
   $('.hamburger').on('click', function(){
     $('body').addClass('active');
     $('.hamburger').hide();
-  })
+  });
 
     //bring out the side bar
     
@@ -15,6 +15,6 @@
     $('.close').on('click', function(){
         $('body').removeClass('active');
         $('.hamburger').show();
-    })
+    });
     // add a class so the sidebar slides back to left
     // hamburger is shown
