@@ -1,11 +1,17 @@
+<!-- feedback.html -->
+
+<!-- inspiration from FEWD Feedback form -->
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <meta htttps-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Feedback</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- add fontawesome: https://fontawesome.com/get-started -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
         
         <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
 
@@ -14,28 +20,64 @@
     </head>
     <body>
         
-        <p>Hey there!  Thanks for coming by, please feel free to reach out to me</p>
+        <!-- navigation bar -->
+        <nav class="sidebar">
+            <a href="#" class="close">x</a>
+            <h2>Front End Portfolio</h2>
+            <ul>
+              <li><a href="index.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="map.html">Bicycle Map</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
         
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>        
+        </div>
+    
+        <div>
+            <p>Hey there!  Thanks for coming by, please feel free to reach out to me</p>
+        </div>
         <!-- Comments form: I need to speak with someone in sales -->
         <!-- name, email, phone number, comments, submit button -->
-        <form action="">
-            <fieldset>
-                <legend>Your Contact Info</legend>
-        
-                <label for="name">Full Name</label>
-                <input type="text" placeholder="Enter your name" id="name">
-                
-                <label for="email">Email</label>
-                <input type="text" placeholder="Enter your email" id="email">
-                
-                <label for="phone">Phone Number</label>
-                <input type="text" placeholder="Enter your phone number" id="phone">
-        
-                <hr>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Your Contact Info</legend>
+                    
+                    <section class ="feedback-wrapper">
+            
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="Enter your name" id="name">
                         
-                <label for="past">Comments</label>
-                <textarea name="past" placeholder="What comments do you have for this page?" id="past"></textarea>
-            </fieldset>
-        </form>
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Enter your email" id="email">
+                        
+                        <label for="phone">Phone Number</label>
+                        <input type="text" placeholder="Enter your phone number" id="phone">
+                
+                        <hr>
+                                
+                        <label for="past">Comments</label>
+                        <textarea name="past" placeholder="What comments do you have for this page?" id="past"></textarea>
+                    </section>
+                </fieldset>
+            </form>
+        </div> 
+        
+        <div>
+            <button type="submit" id="submit">Submit Feedback</button>
+        </div>
+
+        <!--  add jquery?
+          <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+  </script>
+        -->
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

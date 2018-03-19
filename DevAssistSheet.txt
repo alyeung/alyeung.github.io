@@ -22,8 +22,6 @@ git --help push
 
 git status  // to get the status of un added or changed files.
 
-
-
 ---------------------- From Chris Nelson:
 
 www.vebolife.com

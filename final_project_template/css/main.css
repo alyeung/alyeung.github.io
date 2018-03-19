@@ -38,7 +38,6 @@ button {
   text-transform: uppercase;
   color: black;
   /*text color */
-  border: none;
   outline: none;
   border-radius: 3px; }
 
@@ -171,13 +170,55 @@ nav li:first-child {
   .modal-background button {
     color: white;
     /*text color */
-    background-color: #3399CC; }
+    background-color: #3399CC;
+    border: none; }
 
 .modal-content {
   padding: 40px 20px;
   color: #444;
   background-color: white;
   width: 60%; }
+
+/* style input fields for feedback from */
+form {
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 60%;
+  margin: 40px auto;
+  padding: 20px 40px 40px; }
+
+/* style input header forms */
+legend {
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 22px;
+  padding-bottom: 15px; }
+
+/* hide border */
+fieldset {
+  border: 0px; }
+
+label {
+  padding-left: 0px; }
+
+/* style input text fields */
+input[type=text] {
+  padding: 10px;
+  /* tabbed in */
+  width: 100%;
+  margin-top: 10px;
+  /* space out input and labels */
+  margin-bottom: 10px; }
+
+/* style text area */
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px; }
+
+.feedback-wrapper {
+  display: grid;
+  grid-template-columns: 1fr; }
 
 /* media query for responsiveness */
 @media screen and (max-width: 660px) {
