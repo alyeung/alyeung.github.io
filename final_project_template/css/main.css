@@ -26,11 +26,21 @@ Base styles:
 
 body {
   font-family: Raleway;
-  background-color: lightgrey; }
+  background-color: #FFFFFF; }
 
 /* Fix for responsive images */
 img {
   max-width: 100%; }
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: black;
+  /*text color */
+  border: none;
+  outline: none;
+  border-radius: 3px; }
 
 /* style blog post picture side by side */
 .blog-post {
@@ -59,7 +69,8 @@ article {
   /* white border around article */
   /*margin: 15px 15px;  article to article spacing, adds grey */
   margin: 30px auto;
-  /* center articles */ }
+  /* center articles */
+  /* style buttons for article */ }
 
 /* blog.html */
 .video-container {
@@ -158,16 +169,9 @@ nav li:first-child {
   /*center button and content in modal */
   /* modal button styling */ }
   .modal-background button {
-    padding: 10px 20px;
-    cursor: pointer;
-    text-transform: uppercase;
     color: white;
     /*text color */
-    border: none;
-    outline: none;
-    background-color: #3399CC;
-    border-radius: 3px;
-    margin: 100px 0; }
+    background-color: #3399CC; }
 
 .modal-content {
   padding: 40px 20px;

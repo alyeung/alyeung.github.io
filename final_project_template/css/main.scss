@@ -25,6 +25,7 @@ $amzn-blue: #3399CC;
 $amzn-orange: #FF6600;
 $amzn-grey: #666666;
 $amzn-lt-grey: #F8F8F8;
+$amzn-white: #FFFFFF;
 
 /* --------------------------------------------------------------------------
 Base styles:
@@ -37,12 +38,22 @@ Base styles:
 
 body{
   font-family: Raleway;
-  background-color: lightgrey;
+  background-color: $amzn-white;
 }
 
 /* Fix for responsive images */
 img {
   max-width: 100%;
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: black; /*text color */
+    border: none;
+    outline: none;
+    border-radius: 3px;
 }
 
 /* style blog post picture side by side */
@@ -72,6 +83,11 @@ article{
     padding: 10px 10px 10px 10px; /* white border around article */
     /*margin: 15px 15px;  article to article spacing, adds grey */
     margin: 30px auto; /* center articles */
+    
+    /* style buttons for article */
+    button{
+      
+    }
 }
 
 /* blog.html */
@@ -191,15 +207,8 @@ nav li:first-child {
   
   /* modal button styling */
   button{
-    padding: 10px 20px;
-    cursor: pointer;
-    text-transform: uppercase;
     color: white; /*text color */
-    border: none;
-    outline: none;
     background-color: $amzn-blue;
-    border-radius: 3px;
-    margin: 100px 0;
   }
 }
 
