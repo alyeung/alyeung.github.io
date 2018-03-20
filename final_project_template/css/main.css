@@ -235,7 +235,8 @@ textarea {
 .contact-tile-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 60%; }
+  width: 60%;
+  margin: 0 auto; }
 
 /* media query for responsiveness */
 @media screen and (max-width: 660px) {

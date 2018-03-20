@@ -17,3 +17,5 @@ make allan links to portfolio
 fix banner retracting duration
 
 add orange hover over effects for blog and links
+
+Check Css: http://pleeease.io/play/
