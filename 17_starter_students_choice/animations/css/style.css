@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: 'Open Sans';
+  background-color: salmon;
+  color:white;
+}
+
+header {
+  text-align: center;
+  animation: animateIn 1s linear;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+main p {
+  animation: fade 5s infinite linear;
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}

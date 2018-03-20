@@ -1,0 +1,21 @@
+img {
+	max-width: 100%;
+}
+
+/*Some styles to center the carousel and
+make sure it doesn't take up the full width of the page*/
+.carousel-wrapper {
+	max-width: 600px;
+	margin: 0 auto 30px;
+}
+
+/*Some styles to center the carousel and
+make sure it doesn't take up the full width of the page*/
+.slick-next:before,
+.slick-prev:before {
+	/* Change arrow color */
+	color: #2875FA;
+	/* Change arrow size */
+	/*font-size: 30px;*/
+
+}
