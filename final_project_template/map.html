@@ -1,3 +1,6 @@
+
+<!-- map.html page with carousel -->
+
 <!doctype html>
 <html lang="">
 <head>
@@ -23,9 +26,23 @@
 </head>
 <body>
   
-  <nav>
-    <!-- ask about banners -->
-  </nav>
+    <!-- navigation bar -->
+    <nav class="sidebar">
+        <a href="#" class="close">x</a>
+        <h2>Front End Portfolio</h2>
+        <ul>
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="map.html">Bicycle Map</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
   
   <!-- utilize layout from Monument Blog for inspiration-->
   <!-- use bicycle as image -->
@@ -183,7 +200,9 @@
   <button>bike routes</button>
   <button>shortcuts</button>
 
-	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <script src="js/jquery-1.12.0.min.js"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  -->
 
   <!-- STEP 3: Add script tag for Slick's JS file here (after jQuery, before your own JS) -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
