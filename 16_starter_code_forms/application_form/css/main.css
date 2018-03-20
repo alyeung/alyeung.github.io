@@ -88,3 +88,14 @@ hr{
   display: grid;
   grid-template-columns: 1fr; 
 }
+
+.warn{
+	border: 1px solid red;
+}
+
+/* hide warning message */
+form p {
+	margin-top: 0;
+	color: #FF3846;
+	display: none;
+}
