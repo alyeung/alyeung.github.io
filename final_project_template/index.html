@@ -6,45 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio Page</title>
 
-  <!-- favicon Github icon 
-  <link rel="fluidicon" href="fluidicon.png" title="Github">
-  -->
+  <!-- add fontawesome: https://fontawesome.com/get-started -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+
+
   <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
-  <!--
-  <link rel="fluid-icon" href="apple-touch-icon.png" title="Github">
-  -->
-  <!-- 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
-  -->
+
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <!-- Add your site content here. Keep it pretty and use indentation :) -->
 
+  <!-- navigation bar -->
+  <nav class="sidebar">
+      <a href="#" class="close">x</a>
+      <h2>Front End Portfolio</h2>
+      <ul>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="map.html">Bicycle Map</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+  </nav>
+  
+  <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+  </div>
+
 
   <!-- HINT: Need to link to another page? Create a file with an html extension in your main project folder. -->
   <!-- Then link to it using an anchor. for example: <a href="blog.html">Blog</a> -->
 
-  <nav>
     <!-- banner-->
-    <img src="https://placebear.com/900/100">
+<!--    <img src="https://placebear.com/900/100"> 
+-->
     <!-- hamburger -->
-    <i class="fas fa-bars" aria-hidden="false"></i>
+<!--    <i class="fas fa-bars" aria-hidden="false"></i>
     <img src="https://placebear.com/100/50"></img>
     <input></input>
     <button>Search</button>
     <hr>
+    -->
 
-  <!-- try out flex box? -->
+  <!-- try out flex box? 
     <button>Store Map</button>
     <button>Deals</button>
     <button>Gadgets</button>
     <button>Deals Blog</button>
     <button>Contact Us</button>
-
-  </nav>
-
+-->
   <main>
     <section class ="grid-wrapper">
       <div>
@@ -131,6 +146,10 @@
   </footer>
 
   <script src="js/jquery-1.12.0.min.js"></script>
+  
+  <!-- STEP 3: Add script tag for Slick's JS file here (after jQuery, before your own JS) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -99,7 +99,7 @@ article {
   margin-bottom: 6px; }
 
 .line:last-child {
-  margin-bottom: 10px; }
+  margin-bottom: 0px; }
 
 nav {
   width: 300px;

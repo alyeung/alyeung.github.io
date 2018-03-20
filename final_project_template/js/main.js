@@ -7,7 +7,15 @@
 
 
 // slick
-$('.carousel-wrapper').slick();
+$('.carousel-wrapper').slick({
+  //  dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: 'linear'
+});   
 
 // when click on hamburger 
   $('.hamburger').on('click', function(){
