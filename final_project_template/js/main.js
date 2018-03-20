@@ -1,8 +1,13 @@
 /* global $*/
+
 ///////////////
 // Feedback from Bryan: must have & nice, wish I have to have so we don't get stuck.
 // !!!!!!!!!!!!!!!!!(no hover on mobile devices ***** )
 //////////////
+
+
+// slick
+$('.carousel-wrapper').slick();
 
 // when click on hamburger 
   $('.hamburger').on('click', function(){
@@ -73,6 +78,8 @@ $('#showPostman').on('click', function(){
 $('#postmanCloseButton').on('click', function(){
     $('#postmanModal').hide();
 });
+
+
 
 // handle feedback form
 

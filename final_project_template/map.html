@@ -13,6 +13,11 @@
   <!-- add github favicon -->
   <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
 
+  <!-- STEP 1: Add link for Slick's CSS file here (before the slick theme and before your own CSS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <!-- STEP 2 (optional): Add link for Slick's theme file here (after the Slick CSS and before your own CSS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -33,34 +38,35 @@
   
   <!-- my gear -->
   
-  <article>
-    <img src="https://placebear.com/400/300"></img>
-    <h3>Dynamo Lighting</h3>
-    <h5>Busch and Muller</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis neque, finibus vitae suscipit sed, gravida nec risus. Nunc in ipsum eget leo posuere vulputate.</p>
-  </article>
-  
-  <article>
-    <img src="https://placebear.com/400/300"></img>
-    <h3>Battery Lights</h3>
-    <h5>Planet Bike</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis neque, finibus vitae suscipit sed, gravida nec risus. Nunc in ipsum eget leo posuere vulputate.</p>
-  </article>
-
-  <article>
-    <img src="https://placebear.com/400/300"></img>
-    <h3>Bicycle Brake Pads</h3>
-    <h5>Kool Stop</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis neque, finibus vitae suscipit sed, gravida nec risus. Nunc in ipsum eget leo posuere vulputate.</p>
-  </article>
-
-  <article>
-    <img src="https://placebear.com/400/300"></img>
-    <h3>Gator Skin Tires</h3>
-    <h5>Continental</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis neque, finibus vitae suscipit sed, gravida nec risus. Nunc in ipsum eget leo posuere vulputate.</p>
-  </article>
-  
+    <div class ="carousel-wrapper">
+      <article>
+        <img src="https://placebear.com/400/300"></img>
+        <h3>Dynamo Lighting</h3>
+        <h5>Busch and Muller</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis neque, finibus vitae suscipit sed, gravida nec risus. Nunc in ipsum eget leo posuere vulputate.</p>
+      </article>
+      
+      <article>
+        <img src="https://placebear.com/400/300"></img>
+        <h3>Battery Lights</h3>
+        <h5>Planet Bike</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis neque, finibus vitae suscipit sed, gravida nec risus. Nunc in ipsum eget leo posuere vulputate.</p>
+      </article>
+    
+      <article>
+        <img src="https://placebear.com/400/300"></img>
+        <h3>Bicycle Brake Pads</h3>
+        <h5>Kool Stop</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis neque, finibus vitae suscipit sed, gravida nec risus. Nunc in ipsum eget leo posuere vulputate.</p>
+      </article>
+    
+      <article>
+        <img src="https://placebear.com/400/300"></img>
+        <h3>Gator Skin Tires</h3>
+        <h5>Continental</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis neque, finibus vitae suscipit sed, gravida nec risus. Nunc in ipsum eget leo posuere vulputate.</p>
+      </article>
+  </div>
   <!-- bike shops Carousel-->
   <article>
     <img src="https://placebear.com/400/300"></img>
@@ -177,6 +183,12 @@
   <button>bike routes</button>
   <button>shortcuts</button>
 
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+
+  <!-- STEP 3: Add script tag for Slick's JS file here (after jQuery, before your own JS) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+	<script src="js/main.js"></script>
   
 </body>
 </html>
