@@ -1,12 +1,21 @@
+/*global $*/
+
+/* extra 
+
+add focus and hover to the form elements
+
+*/
+//$('form').on('click', 
+
 $('form').on('submit',function(event){
   event.preventDefault();
 
-  var firstName = ('#firstName').val();
+  var firstName = $('#firstName').val();
   var lastName = $('#lastName').val();
   var email = $('#email').val();
 
   if (!firstName) {
-    $('#firstName').addclass('warn');
+    $('#firstName').addClass('warn');
     $('#firstName').next('.warning').show();
   } else {
     $('#firstName').removeClass('warn');
@@ -19,13 +28,13 @@ $('form').on('submit',function(event){
   } else {
     $('#lastName').removeClass('warn');
     $('#lastName').next('.warning').hide();
-
+  }
 
   if (!email) {
-    $('#email').addClass('warn';
+    $('#email').addClass('warn');
     $('#email').next('.warning').show();
   } else {
-    $('#email').removeclass('warn');
+    $('#email').removeClass('warn');
     $('#email').next('.warning').hide();
   }
 
