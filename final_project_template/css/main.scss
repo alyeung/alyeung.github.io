@@ -289,7 +289,6 @@ textarea{
   grid-template-columns: 1fr 1fr 1fr;
   width: 60%;
   margin:0 auto;
-  
 }
 
 /* media query for responsiveness */
@@ -308,9 +307,14 @@ textarea{
   
   .deal-wrapper{
      display: grid;
-    grid-template-columns: 1fr;   
+     grid-template-columns: 1fr;   
   }
   
+  .bottomNav{ 
+    float: right;
+    display: block;
+  }
+/* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/  
 }
 
 
@@ -356,7 +360,7 @@ section:nth-of-type(even) {
 navigation{
   position: fixed;
   background: black;
-  height: 50px;
+
   width: 100%;
   text-align: center;
   bottom:0;
@@ -380,4 +384,9 @@ navigation a:hover {
 .activeB {
   background-color: #00AEEF;
   color: white;
+}
+
+
+.bottomNav{
+    overflow: hidden;
 }

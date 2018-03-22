@@ -111,6 +111,18 @@ $('navigation a').on('click', function(e) {
   
 });
 
+// responsive bottom Menu
+/*
+function myFunction() {
+    var x = document.getElementById("myBottomNav");
+    if (x.className === "bottomNav") {
+        x.className += " responsive";
+    } else {
+        x.className = "bottomNav";
+    }
+}
+*/
+
 // handle feedback form
 
 

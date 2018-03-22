@@ -254,7 +254,13 @@ textarea {
   /* style modal boxes */
   .deal-wrapper {
     display: grid;
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+
+  .bottomNav {
+    float: right;
+    display: block; }
+
+  /* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/ }
 /* carousel */
 /*Some styles to center the carousel and
 make sure it doesn't take up the full width of the page*/
@@ -289,7 +295,6 @@ section:nth-of-type(even) {
 navigation {
   position: fixed;
   background: black;
-  height: 50px;
   width: 100%;
   text-align: center;
   bottom: 0; }
@@ -310,5 +315,8 @@ navigation a:hover {
 .activeB {
   background-color: #00AEEF;
   color: white; }
+
+.bottomNav {
+  overflow: hidden; }
 
 /*# sourceMappingURL=main.css.map */
