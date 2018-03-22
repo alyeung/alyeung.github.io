@@ -340,3 +340,11 @@ section:nth-of-type(even) {
   display: table-cell;
   vertical-align: middle;
 }
+
+navigation{
+  position: fixed;
+  background: black;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+}
