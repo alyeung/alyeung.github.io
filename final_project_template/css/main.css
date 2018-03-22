@@ -188,7 +188,9 @@ nav li:first-child {
   padding: 40px 20px;
   color: #444;
   background-color: #FFFFFF;
-  width: 60%; }
+  width: 60%;
+  display: grid;
+  /* close button fix for modal */ }
 
 /* style input fields for feedback from */
 form {
@@ -259,6 +261,10 @@ textarea {
   .bottomNav {
     float: right;
     display: block; }
+
+  .video-container video {
+    width: 100%;
+    height: auto; }
 
   /* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/ }
 /* carousel */

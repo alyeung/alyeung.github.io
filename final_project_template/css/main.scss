@@ -204,7 +204,7 @@ nav li:first-child {
   position: fixed; /* stays in place while user scrolls */
   
   /* https://stackoverflow.com/questions/28080910/what-does-top-0-left-0-bottom-0-right-0-mean */
-  top:0;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -229,6 +229,7 @@ nav li:first-child {
   color: #444;
   background-color: $amzn-white;
   width: 60%;
+  display: grid; /* close button fix for modal */
 }
 
 /* style input fields for feedback from */
@@ -313,6 +314,11 @@ textarea{
   .bottomNav{ 
     float: right;
     display: block;
+  }
+  
+  .video-container video{
+    width: 100%;
+    height: auto;
   }
 /* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/  
 }
