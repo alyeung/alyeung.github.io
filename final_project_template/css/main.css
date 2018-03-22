@@ -251,7 +251,10 @@ textarea {
   .modal-content {
     width: 97%; }
 
-  /* style modal boxes */ }
+  /* style modal boxes */
+  .deal-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; } }
 /* carousel */
 /*Some styles to center the carousel and
 make sure it doesn't take up the full width of the page*/

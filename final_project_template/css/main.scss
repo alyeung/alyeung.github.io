@@ -305,6 +305,12 @@ textarea{
   }
   
   /* style modal boxes */
+  
+  .deal-wrapper{
+     display: grid;
+    grid-template-columns: 1fr;   
+  }
+  
 }
 
 
