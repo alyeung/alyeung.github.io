@@ -3,7 +3,7 @@
 /* extra 
 
 add focus and hover to the form elements
-
+ do this in CSS 
 */
 //$('form').on('click', 
 

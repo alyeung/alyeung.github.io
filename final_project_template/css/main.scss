@@ -323,6 +323,20 @@ make sure it doesn't take up the full width of the page*/
 
 }
 
+section:nth-of-type(odd) {
+  background-color: #dfdfdf;
+}
 
+section:nth-of-type(even) {
+  background-color: #F07057;
+}
 
+.sectionHeight {
+  height: 100%;
+}
 
+.section-inner {
+  padding: 40px;
+  display: table-cell;
+  vertical-align: middle;
+}
