@@ -83,7 +83,9 @@ button{
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr; /* two rows of 3 each */
 	
-	padding:200px;
+	padding: 200px 25px;
+	
+	grid-column-gap: 10%;
 }
 
 article{
@@ -325,6 +327,8 @@ make sure it doesn't take up the full width of the page*/
 
 }
 
+/* index.html nav */
+
 section:nth-of-type(odd) {
   background-color: #dfdfdf;
 }
@@ -350,4 +354,24 @@ navigation{
   width: 100%;
   text-align: center;
   bottom:0;
+}
+
+navigation a{
+  color: #fff;
+  height: 50px;
+  padding: 0 10px;
+  line-height: 50px;
+  display: inline-block;
+  text-decoration: none;
+  color: #999;
+  margin: 0 10px;
+}
+
+navigation a:hover {
+  color: white;
+}
+
+.activeB {
+  background-color: #00AEEF;
+  color: white;
 }

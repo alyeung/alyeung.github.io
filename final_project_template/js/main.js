@@ -92,6 +92,12 @@ $('#postmanCloseButton').on('click', function(){
 $('navigation a').on('click', function(e) {
   // prevent the standard link operation on click
   e.preventDefault();
+ 
+ 
+  $(this).addClass('activeB');
+  
+  $(this).siblings().removeClass('activeB');
+  
   // use the href of the link to identify what
   // section to scroll to
   var thisTarget = $(this).attr('href');
@@ -102,7 +108,7 @@ $('navigation a').on('click', function(e) {
   $('html, body').animate({
     scrollTop: targetOffset
   }, 600);
-
+  
 });
 
 // handle feedback form
