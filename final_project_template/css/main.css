@@ -68,7 +68,8 @@ button {
 .deal-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* two rows of 3 each */ }
+  /* two rows of 3 each */
+  padding: 200px; }
 
 article {
   display: block;
@@ -285,6 +286,7 @@ navigation {
   background: black;
   height: 50px;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */
