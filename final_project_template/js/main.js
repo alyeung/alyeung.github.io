@@ -55,6 +55,11 @@ $('#cloud9CloseButton').on('click', function(){
     //$('.modal-background').hide();
     // modal is hidden
     $('#cloud9Modal').hide();
+
+    // pause video and reset on close
+    //https://stackoverflow.com/questions/13598423/stop-all-playing-iframe-videos-on-click-a-link-javascript
+    $('iframe').attr('src', $('iframe').attr('src'));
+    
 });
     
 // handle code commit dialog open
