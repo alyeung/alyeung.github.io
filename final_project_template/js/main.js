@@ -57,6 +57,7 @@ $('#cloud9CloseButton').on('click', function(){
     // pause video and reset on close
     //https://stackoverflow.com/questions/13598423/stop-all-playing-iframe-videos-on-click-a-link-javascript
     $('iframe').attr('src', $('iframe').attr('src'));
+    //$('object').attr('data', $('object').attr('data'));
     
     //$('.modal-background').hide();
     // modal is hidden
@@ -75,6 +76,7 @@ $('#codeCommitCloseButton').on('click', function(){
     // pause video and reset on close
     //https://stackoverflow.com/questions/13598423/stop-all-playing-iframe-videos-on-click-a-link-javascript
     $('iframe').attr('src', $('iframe').attr('src'));        
+    //$('object').attr('data', $('object').attr('data'));
     
     $('#codeCommitModal').hide();
 });
@@ -90,6 +92,7 @@ $('#lambdaCloseButton').on('click', function(){
     // pause video and reset on close
     //https://stackoverflow.com/questions/13598423/stop-all-playing-iframe-videos-on-click-a-link-javascript
     $('iframe').attr('src', $('iframe').attr('src'));
+    //$('object').attr('data', $('object').attr('data'));
     
     $('#lambdaModal').hide();
 });
@@ -105,6 +108,7 @@ $('#postmanCloseButton').on('click', function(){
     // pause video and reset on close
     //https://stackoverflow.com/questions/13598423/stop-all-playing-iframe-videos-on-click-a-link-javascript
     $('iframe').attr('src', $('iframe').attr('src'));
+    //$('object').attr('data', $('object').attr('data'));
 
     $('#postmanModal').hide();
     
