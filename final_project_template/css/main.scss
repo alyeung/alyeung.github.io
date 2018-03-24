@@ -230,8 +230,14 @@ nav li:first-child {
   background-color: $amzn-white;
   width: 60%;
   display: grid; /* close button fix for modal */
+  text-align: center;
 }
 
+.center-youtube{
+    /* used to center youtube iframe contents */
+    margin: auto;
+  
+}
 /* style input fields for feedback from */
 
 form {
