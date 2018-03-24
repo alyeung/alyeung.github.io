@@ -60,7 +60,7 @@ $('#cloud9CloseButton').on('click', function(){
     
     //$('.modal-background').hide();
     // modal is hidden
-    $('#cloud9Modal').hide();    
+    $('#cloud9Modal').hide();
     
 });
     
