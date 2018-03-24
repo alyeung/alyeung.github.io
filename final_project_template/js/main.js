@@ -53,6 +53,7 @@ $('#showCloud9').on('click', function(){
 // when click on close
 $('#cloud9CloseButton').on('click', function(){
 
+
     // pause video and reset on close
     //https://stackoverflow.com/questions/13598423/stop-all-playing-iframe-videos-on-click-a-link-javascript
     $('iframe').attr('src', $('iframe').attr('src'));
@@ -93,7 +94,7 @@ $('#lambdaCloseButton').on('click', function(){
     $('#lambdaModal').hide();
 });
 
-// handle lambda dialog open
+// handle postman
 $('#showPostman').on('click', function(){
     $('#postmanModal').show();
 });
