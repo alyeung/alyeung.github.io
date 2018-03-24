@@ -272,6 +272,10 @@ textarea {
     height: auto; }
 
   /* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/ }
+.button-center {
+  margin-left: 40%;
+  margin-right: 40%; }
+
 /* carousel */
 /*Some styles to center the carousel and
 make sure it doesn't take up the full width of the page*/
