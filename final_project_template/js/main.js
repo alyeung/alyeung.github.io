@@ -46,6 +46,7 @@ $('#postmanModal').hide();
 // when click to read more for cloud 9
 $('#showCloud9').on('click', function(){
     // modal shows up
+    //$('#nine').attr('src', $('#nine').attr('src'));
     $('#cloud9Modal').show();
 });
 
@@ -56,7 +57,8 @@ $('#cloud9CloseButton').on('click', function(){
 
     // pause video and reset on close
     //https://stackoverflow.com/questions/13598423/stop-all-playing-iframe-videos-on-click-a-link-javascript
-    $('iframe').attr('src', $('iframe').attr('src'));
+    //$('iframe').attr('src', $('iframe').attr('src'));
+    $('#nine').attr('src', $('#nine').attr('src'));
     //$('object').attr('data', $('object').attr('data'));
     
     //$('.modal-background').hide();
@@ -67,6 +69,7 @@ $('#cloud9CloseButton').on('click', function(){
     
 // handle code commit dialog open
 $('#showCodeCommit').on('click', function(){
+    //$('#code').attr('src', $('#code').attr('src')); 
     $('#codeCommitModal').show();
 });
 
@@ -75,7 +78,8 @@ $('#codeCommitCloseButton').on('click', function(){
     
     // pause video and reset on close
     //https://stackoverflow.com/questions/13598423/stop-all-playing-iframe-videos-on-click-a-link-javascript
-    $('iframe').attr('src', $('iframe').attr('src'));        
+    //$('iframe').attr('src', $('iframe').attr('src'));    
+    $('#code').attr('src', $('#code').attr('src')); 
     //$('object').attr('data', $('object').attr('data'));
     
     $('#codeCommitModal').hide();
@@ -83,7 +87,10 @@ $('#codeCommitCloseButton').on('click', function(){
 
 // handle lambda dialog open
 $('#showLambda').on('click', function(){
+    //$('#lamb').attr('src', $('#lamb').attr('src'));
     $('#lambdaModal').show();
+    // force a reload
+    
 });
 
 // and close
@@ -91,7 +98,7 @@ $('#lambdaCloseButton').on('click', function(){
     
     // pause video and reset on close
     //https://stackoverflow.com/questions/13598423/stop-all-playing-iframe-videos-on-click-a-link-javascript
-    $('iframe').attr('src', $('iframe').attr('src'));
+    $('#lamb').attr('src', $('#lamb').attr('src'));
     //$('object').attr('data', $('object').attr('data'));
     
     $('#lambdaModal').hide();
@@ -99,7 +106,9 @@ $('#lambdaCloseButton').on('click', function(){
 
 // handle postman
 $('#showPostman').on('click', function(){
+    $('#post').attr('src', $('#post').attr('src'));
     $('#postmanModal').show();
+
 });
 
 // and close
@@ -107,7 +116,8 @@ $('#postmanCloseButton').on('click', function(){
 
     // pause video and reset on close
     //https://stackoverflow.com/questions/13598423/stop-all-playing-iframe-videos-on-click-a-link-javascript
-    $('iframe').attr('src', $('iframe').attr('src'));
+    //$('iframe').attr('src', $('iframe').attr('src'));
+    $('#post').attr('src', $('#post').attr('src'));
     //$('object').attr('data', $('object').attr('data'));
 
     $('#postmanModal').hide();
