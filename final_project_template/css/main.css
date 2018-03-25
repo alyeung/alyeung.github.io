@@ -82,11 +82,6 @@ article {
   /* center articles */
   /* style buttons for article */ }
 
-.img-pad {
-  position: relative;
-  height: 173px;
-  margin: auto; }
-
 /* blog.html */
 .video-container {
   overflow: hidden;
@@ -340,7 +335,8 @@ navigation a:hover {
   overflow: hidden; }
 
 footer {
-  text-align: center; }
+  text-align: center;
+  margin: 10px; }
 
 /* map header */
 header {
