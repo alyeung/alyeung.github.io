@@ -41,6 +41,7 @@ $('#cloud9Modal').hide();
 $('#codeCommitModal').hide();
 $('#lambdaModal').hide();
 $('#postmanModal').hide();
+$('#wordpressModal').hide();
 
 
 // when click to read more for cloud 9
@@ -123,6 +124,21 @@ $('#postmanCloseButton').on('click', function(){
     $('#postmanModal').hide();
     
 });
+
+// show wordpress
+$('#showWordpress').on('click', function(){
+
+    $('#wordpressModal').show();
+
+});
+
+// and close
+$('#wordpressCloseButton').on('click', function(){
+
+    $('#wordpressModal').hide();
+    
+});
+
 
 // smooth scroll
 // Do it when someone clicks a nav link

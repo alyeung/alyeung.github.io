@@ -82,6 +82,11 @@ article {
   /* center articles */
   /* style buttons for article */ }
 
+.img-pad {
+  position: relative;
+  height: 173px;
+  margin: auto; }
+
 /* blog.html */
 .video-container {
   overflow: hidden;

@@ -101,6 +101,14 @@ article{
     }
 }
 
+.img-pad{
+
+  position: relative;
+  height: 173px;
+  margin: auto;
+
+}
+
 /* blog.html */
 .video-container{
   overflow:hidden; /* hide over flow */
@@ -329,8 +337,8 @@ textarea{
 /* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/  
 }
 
+// view more button centered horizontally
 .button-center{
-
   // display: block;
    margin-left: 40%;
    margin-right: 40%;
