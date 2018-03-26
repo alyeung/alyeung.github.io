@@ -12,7 +12,7 @@ $(window).on('scroll', function () {
     console.log(distanceScrolled);	
 
         // handle butterfly animation
-      if(distanceScrolled > 2560){
+      if(distanceScrolled > 2660){
         $('.butterfly').addClass('animated');
       }
       else{
