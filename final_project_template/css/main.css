@@ -286,7 +286,10 @@ textarea {
     height: auto; }
 
   .carousel-wrapper {
-    max-width: 90%; }
+    max-width: 98%; }
+
+  form {
+    width: 98%; }
 
   /* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/ }
 .button-center {
