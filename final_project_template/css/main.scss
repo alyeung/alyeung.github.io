@@ -508,3 +508,15 @@ header h1{
   opacity: 1;
   transform: translateX(10%);
 }
+
+.warn{
+	border: 1px solid red;
+}
+
+/* input form feedback from */
+/* hide warning message */
+form p {
+	margin-top: 0;
+	color: #FF3846;
+	display: none;
+}

@@ -44,37 +44,49 @@
             <div class="line"></div>        
         </div>
         
-        <section class="contact-tile-wrapper">
-            <div></div>
-            <div>
-                <p>Hey there!  Thanks for coming by, please feel free to reach out to me</p>
-            </div>
-            <div></div>
+        <!--<section class="contact-tile-wrapper">-->
+        <!--    <div></div>-->
+        <!--    <div>-->
+        <!--        <p>Hey there!  Thanks for coming by, please feel free to reach out to me</p>-->
+        <!--    </div>-->
+        <!--    <div></div>-->
         <!-- find me -->
         <!-- contact me on Github -->
-            <article><a href="https://github.com/alyeung">  
-                <img src="https://placebear.com/100/100"></img>
-                <h3>GitHub</h3>
-                </a>  
-            </article>         
+        <!--    <article><a href="https://github.com/alyeung">  -->
+        <!--        <img src="https://placebear.com/100/100"></img>-->
+        <!--        <h3>GitHub</h3>-->
+        <!--        </a>  -->
+        <!--    </article>         -->
                 
             <!-- contact me on Linkedin -->
-            <article><a href="https://www.linkedin.com/in/allanyeung">    
-                <img src="https://placebear.com/100/100"></img>
-                <h3>LinkedIn</h3>
-                </a>
-            </article>   
+        <!--    <article><a href="https://www.linkedin.com/in/allanyeung">    -->
+        <!--        <img src="https://placebear.com/100/100"></img>-->
+        <!--        <h3>LinkedIn</h3>-->
+        <!--        </a>-->
+        <!--    </article>   -->
     
             <!-- contact me on Twitter -->
-            <article><a href="https://www.twitter.com/alyeung">    
-                <img src="https://placebear.com/100/100"></img>
-                <h3>Twitter</h3>
-                </a>
-            </article>    
-        </section>
+        <!--    <article><a href="https://www.twitter.com/alyeung">    -->
+        <!--        <img src="https://placebear.com/100/100"></img>-->
+        <!--        <h3>Twitter</h3>-->
+        <!--        </a>-->
+        <!--    </article>    -->
+        <!--</section>-->
         <!-- Comments form: I need to speak with someone in sales -->
         <!-- name, email, phone number, comments, submit button -->
+        
+        <div class="welcome">
+    <P>This page demonstrates my ability to create input forms, and use javascript to check the input fields before writing the information to the console and providing a warning pop-up.</P>
+    <p>This is a test form. So for bugs, questions, feedback... please file it here on <a href="https://github.com/alyeung/alyeung.github.io/issues">Github Issues</a>, or send me an email on <a href="https://www.linkedin.com/in/allanyeung">Linkedin</a>.</p>
+
+            <div class="center-header">
+            <div class="github-card" data-github="alyeung" data-width="400" data-height="" data-theme="default"></div>
+            <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+            </div>
         <div>
+
+      </div>
+
             <form action="">
                 <fieldset>
                     
@@ -84,24 +96,29 @@
             
                         <label for="name">Full Name</label>
                         <input type="text" placeholder="Enter your name" id="name">
+                        <p id="name-error-message">Fill out your full name!</p>
                         
                         <label for="email">Email</label>
                         <input type="text" placeholder="Enter your email" id="email">
+                        <p id="email-error-message">Fill out your full email!</p>
                         
                         <label for="phone">Phone Number</label>
                         <input type="text" placeholder="Enter your phone number" id="phone">
-                
+                        <p id="phone-error-message">Fill out your phone number!</p>
+                        
                         <hr>
                                 
-                        <label for="past">Comments</label>
-                        <textarea name="past" placeholder="What comments do you have for this page?" id="past"></textarea>
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" placeholder="What comments do you have for this page?" id="comments"></textarea>
+                        <p id="comments-error-message">Fill out your comments!</p>
                         <hr>
                         <button type="submit" id="submit">Submit Feedback</button>
                     </section>
                 </fieldset>
             </form>
         </div> 
-
+        
+    
 	<footer>
 		<HR>
 		<a href="https://github.com/alyeung"><i class="fab fa-github fa-2x"></i></a>

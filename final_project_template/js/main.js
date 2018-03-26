@@ -177,6 +177,63 @@ $('navigation a').on('click', function(e) {
   
 });
 
+// feedback form action handling
+$('#submit').on('click', function() {
+    event.preventDefault();
+    
+    // capture data on click
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var phone = $("#phone").val();
+    var comments = $("#comments").val();
+
+    /* handle name experience */
+    if(!name){
+        //alert('Please enter your name');
+        $('#name').addClass('warn');
+        $('#name-error-message').fadeIn(300);
+    } else{
+        $('#name').removeClass('warn');
+        //alert('Submitted!');
+        $('#name-error-message').fadeOut(300);
+    }
+    
+        /* handle email experience */    
+    if(!email ){
+        //alert('Please enter your email');
+        $('#email').addClass('warn');
+        $('#email-error-message').fadeIn(300);
+    } else{
+        $('#email').removeClass('warn');
+        //alert('Submitted!');
+        $('#email-error-message').fadeOut(300);
+    }
+    
+        /* handle phone experience */
+    if(!phone ){
+        //alert('Please enter your email');
+        $('#phone').addClass('warn');
+        $('#phone-error-message').fadeIn(300);
+    } else{
+        $('#phone').removeClass('warn');
+        //alert('Submitted!');
+        $('#phone-error-message').fadeOut(300);
+    }
+    
+         /* handle comments interest  */
+    if(!comments ){
+        //alert('Please enter your email');
+        $('#comments').addClass('warn');
+        $('#comments-error-message').fadeIn(300);
+    } else{
+        $('#comments').removeClass('warn');
+        //alert('Submitted!');
+        $('#comments-error-message').fadeOut(300);
+    }
+    if(name && email && phone && comments){
+        alert("Form fields complete.  Please note this is not wired up yet to send me the feedback.  Please copy the comments and send to me by github or linkedin.")
+    }
+})
 // responsive bottom Menu
 /*
 function myFunction() {
