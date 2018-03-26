@@ -346,7 +346,10 @@ textarea{
     width: 85%;
     height: auto;
   }
-
+  
+  .carousel-wrapper {
+	  max-width: 90%;//600px;
+  }
 /* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/  
 }
 
