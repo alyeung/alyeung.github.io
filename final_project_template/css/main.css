@@ -55,6 +55,9 @@ button {
   padding: 10%;
   background: #FFFFFF; }
 
+.center-header {
+  text-align: center; }
+
 /* style blog post picture side by side */
 .blog-post {
   display: grid;
@@ -291,7 +294,7 @@ textarea {
 /*Some styles to center the carousel and
 make sure it doesn't take up the full width of the page*/
 .carousel-wrapper {
-  max-width: 600px;
+  max-width: 30%;
   margin: 0 auto 30px; }
 
 /*Some styles to center the carousel and

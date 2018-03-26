@@ -71,6 +71,10 @@ button{
   background: $amzn-white;
 }
 
+.center-header{
+  text-align: center;
+}
+
 /* style blog post picture side by side */
 .blog-post{
   display: grid;
@@ -342,6 +346,7 @@ textarea{
     width: 85%;
     height: auto;
   }
+
 /* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/  
 }
 
@@ -357,7 +362,7 @@ textarea{
 /*Some styles to center the carousel and
 make sure it doesn't take up the full width of the page*/
 .carousel-wrapper {
-	max-width: 600px;
+	max-width: 30%;//600px;
 	margin: 0 auto 30px;
 }
 
