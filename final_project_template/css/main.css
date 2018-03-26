@@ -277,6 +277,11 @@ textarea {
     width: 100%;
     height: auto; }
 
+  /* style youtube videos to be narrower*/
+  iframe {
+    width: 85%;
+    height: auto; }
+
   /* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/ }
 .button-center {
   margin-left: 40%;
