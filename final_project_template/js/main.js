@@ -4,8 +4,21 @@
 // Feedback from Bryan: must have & nice, wish I have to have so we don't get stuck.
 // !!!!!!!!!!!!!!!!!(no hover on mobile devices ***** )
 //////////////
+$(window).on('scroll', function () {
+	// Step 1: Google $(window).scrollTop();
+	var distanceScrolled = $(window).scrollTop();
 
+	// Step 2: Log distanceScrolled to the console to see what it holds!
+    console.log(distanceScrolled);	
 
+        // handle butterfly animation
+      if(distanceScrolled > 2560){
+        $('.butterfly').addClass('animated');
+      }
+      else{
+        $('.butterfly').removeClass('animated');  
+    }
+});
 // slick
 $('.carousel-wrapper').slick({
   //  dots: true,
