@@ -50,6 +50,11 @@ button {
   outline: none;
   border-radius: 3px; }
 
+/* style welcome section */
+.welcome {
+  padding: 10%;
+  background: #3399CC; }
+
 /* style blog post picture side by side */
 .blog-post {
   display: grid;
@@ -69,8 +74,9 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* two rows of 3 each */
-  padding: 200px 25px;
-  grid-column-gap: 10%; }
+  /* spacing vertically is 75 px between next section */
+  padding: 75px 25px;
+  grid-column-gap: 5%; }
 
 article {
   display: block;
