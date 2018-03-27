@@ -30,6 +30,17 @@ $('.carousel-wrapper').slick({
     cssEase: 'linear'
 });   
 
+// when screen is narrow remove slick 
+//https://www.sitepoint.com/community/t/adding-removing-classes-on-resize-jquery/191805/2
+/*
+$(window).on('load, resize', function mobileViewUpdate() {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 660) {
+        $(".carousel-wrapper").removeClass('slick');
+    }
+});
+*/
+
 // when click on hamburger 
   $('.hamburger').on('click', function(){
     $('body').addClass('active');

@@ -349,7 +349,7 @@ textarea{
   }
   
   .carousel-wrapper {
-	  max-width: 98%;//600px;
+	  max-width: 100%;//600px;
   }
   
   form {
@@ -361,8 +361,18 @@ textarea{
   // padding-bottom: ;
   padding: 0 0 1% 1%;
   background: $amzn-white;
-}
+  }
   
+  /* handle maps narrowing */
+/*
+  .slick-slider
+  {
+       margin: 0; 
+       padding: 0;
+       width: 100%;
+       height: auto;
+  }
+  */
 /* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/  
 }
 
@@ -519,7 +529,7 @@ header h1{
   /* Here, when the animated class gets added, we want to update the opacity to 1
   and move the butterfly into place by using translateX to set the X-axis to 0. You'll need to add CSS below to do so.*/
   opacity: 1;
-  transform: translateX(10%);
+  transform: translateX(5%);
 }
 
 .warn{
