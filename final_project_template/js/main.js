@@ -231,7 +231,12 @@ $('#submit').on('click', function() {
         $('#comments-error-message').fadeOut(300);
     }
     if(name && email && phone && comments){
+        
+        // form spree: https://formspree.io/
+        
         alert("Form fields complete.  Please note this is not wired up yet to send me the feedback.  Please copy the comments and send to me by github or linkedin.")
+        
+        
     }
 })
 // responsive bottom Menu
