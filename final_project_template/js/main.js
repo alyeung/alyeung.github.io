@@ -235,7 +235,6 @@ $('#submit').on('click', function() {
         // form spree: https://formspree.io/
         
         //alert("Form fields complete.  Please note this is not wired up yet to send me the feedback.  Please copy the comments and send to me by github or linkedin.")
-        //alert("Form fields complete submitted.  Thank you!")
         
         
     }
