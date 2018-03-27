@@ -67,7 +67,7 @@ button{
 .welcome{
   // padding-top: 5%;
   // padding-bottom: ;
-  padding: 10%;
+  padding: 5% 30% 0 30%;
   background: $amzn-white;
 }
 
@@ -120,6 +120,7 @@ article{
   overflow:hidden; /* hide over flow */
   height:400px;
   margin: auto;  /* align center */
+  padding: 0 5% 0 5%; /* top right bottom left */
 }
 
 /* side bar menu */
@@ -257,7 +258,7 @@ nav li:first-child {
 form {
 	background-color: #ffffff;
 	border-radius: 4px;
-	width: 60%;
+	width: 100%;
 	margin: 40px auto ;
 	padding: 20px 40px 40px;
 	
@@ -355,6 +356,13 @@ textarea{
     width: 98%;
     
   }
+  .welcome{
+  // padding-top: 5%;
+  // padding-bottom: ;
+  padding: 0 0 1% 1%;
+  background: $amzn-white;
+}
+  
 /* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/  
 }
 
