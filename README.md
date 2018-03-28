@@ -91,7 +91,7 @@ Yes!  Narrow the page to < 660 pixels, or view on your cell phone
 1. Creating a portfolio page, that reflects my recent experience and capabilities
 2. while including some fun items such as my passion around Amazon Web Services technology and tools
 3. A github repository that reflects my coding style for HTML, CSS, Javascript, and JQuery
-4. Learn by doing, for example digging into using Git/Github via the command line
+4. Learn by doing, for example digging into using Git/Github via the command line, [helper file here](DevAssistSheet.txt)
 5. The Uber-like bottom menu on index.html that is responsive and looks really nice on a mobile devices
 
 ## Known bugs or features to add in the future
