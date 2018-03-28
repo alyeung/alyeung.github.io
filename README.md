@@ -1,6 +1,8 @@
 # alyeung.github.io
+:dog:
 
 # This is my General Assembly Front End Web Development Project
+:+1: :+1: 
 
 ## Introduction
 Final project is under [/final_project_template](href="https://alyeung.github.io/final_project_template/)
@@ -16,20 +18,30 @@ Initially, I was inspired to create one of the following pages:
 Finally, decided that a portfolio page would be best for future opportunities.
 
 ## Site walkthrough
-
+1.  On index.html is the porfolio page, where you can use the bottom menu to navigate through: Data Insights, Software Development, Product Management, and Fun Stuff
+2.  In the upper left is a sandwich bar which will open the side menu to navigate the other 3 pages
+3.  blog.html in inspired from [AWS Technology blog](images/AWS_Blog_Inspiration.png), and some of my favorite technologies
+4.  map.html is dedicated to those who have yet to get started with bicycling in Seattle
+5.  feedback.html is a contact with error checking and a Github contact tiles
+ 
 ## Feature List
 
-1. yes
+1. 
 
 ## Describe the functionality
 
 ## How did you accomplish what you accomplished?
 
-1. yes
+1. Start with something small, get it working, then add onto it
+2. Re-use class exercises for ideas as they stylistically look great
 
 ## What is the ultimate goal of this site?
+1. Responsive portfolio that I can show during a discussion, and it acts as a passive advertisement of my capabilities
+2. A project or code with pictures speaks louder than the typical resume or Linkedin profile
+2. Fan page for Amazon Web Services and Bicycling in Seattle
 
 ## Is your design responsive?  Show us!
+Yes!  Narrow the page to < 660 pixels, or view on your cell phone
 
 # Process Discussion
 1.  Ideate on some site ideas including as discussed in the introduction

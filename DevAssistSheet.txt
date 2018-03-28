@@ -31,3 +31,6 @@ https://www.youtube.com/channel/UC-JQzTHQrVA8j-tamvy66fw
 https://www.youtube.com/channel/UC0tRdbXVDbhaRvZPKsRgmxg
 
 https://reactforbeginners.com/
+
+Markup: 
+https://help.github.com/articles/basic-writing-and-formatting-syntax/#lists
