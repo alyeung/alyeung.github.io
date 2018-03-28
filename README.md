@@ -18,11 +18,11 @@ Initially, I was inspired to create one of the following pages:
 Finally, decided that a portfolio page would be best for future opportunities.
 
 ## Site walkthrough
-1.  On index.html is the porfolio page, where you can use the bottom menu to navigate through: Data Insights, Software Development, Product Management, and Fun Stuff
+1.  On [index.html](final_project_template/index.html) is the porfolio page, where you can use the bottom menu to navigate through: Data Insights, Software Development, Product Management, and Fun Stuff
 2.  In the upper left is a sandwich bar which will open the side menu to navigate the other 3 pages
-3.  blog.html in inspired from [AWS Technology blog](final_project_template/images/AWS_Blog_Inspiration.png), and some of my favorite technologies
-4.  map.html is dedicated to those who have yet to get started with bicycling in Seattle
-5.  feedback.html is a contact with error checking and a Github contact tiles
+3.  [blog.html](final_project_template/blog.html) in inspired from [AWS Technology blog](final_project_template/images/AWS_Blog_Inspiration.png), and some of my favorite technologies
+4.  [map.html](final_project_template/map.html) is dedicated to those who have yet to get started with bicycling in Seattle
+5.  [feedback.html](final_project_template/feedback.html) is a contact form with error checking and a Github contact tiles
  
 ## Feature List
 
@@ -45,7 +45,7 @@ Yes!  Narrow the page to < 660 pixels, or view on your cell phone
 
 # Process Discussion
 1.  Ideate on some site ideas including as discussed in the introduction
-2.  Created wire diagrams: [wire 1](images/wire1.jpg), [wire 2](images/wire2.jpg), [wire 3](images/wire3.jpg)
+2.  Created wire diagrams: [wire 1](final_project_template/images/wire1.jpg), [wire 2](final_project_template/images/wire2.jpg), [wire 3](final_project_template/images/wire3.jpg)
 3.  Created html pages without any styling, just dropped elements
 4.  Started styling
 5.  Pseudo code for javascript, and then taking inspiration from class exercises
