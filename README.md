@@ -5,7 +5,7 @@
 :+1: :+1: 
 
 ## Introduction
-Final project is under [/final_project_template](href="https://alyeung.github.io/final_project_template/)
+Final project is under [/final_project_template](https://alyeung.github.io/final_project_template/)
 
 Initially, I was inspired to create one of the following pages:
 
@@ -20,7 +20,7 @@ Finally, decided that a portfolio page would be best for future opportunities.
 ## Site walkthrough
 1.  On index.html is the porfolio page, where you can use the bottom menu to navigate through: Data Insights, Software Development, Product Management, and Fun Stuff
 2.  In the upper left is a sandwich bar which will open the side menu to navigate the other 3 pages
-3.  blog.html in inspired from [AWS Technology blog](images/AWS_Blog_Inspiration.png), and some of my favorite technologies
+3.  blog.html in inspired from [AWS Technology blog](final_project_template/images/AWS_Blog_Inspiration.png), and some of my favorite technologies
 4.  map.html is dedicated to those who have yet to get started with bicycling in Seattle
 5.  feedback.html is a contact with error checking and a Github contact tiles
  
