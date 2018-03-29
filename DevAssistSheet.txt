@@ -34,3 +34,5 @@ https://reactforbeginners.com/
 
 Markup: 
 https://help.github.com/articles/basic-writing-and-formatting-syntax/#lists
+
+https://gist.github.com/Chaser324/ce0505fbed06b947d962
