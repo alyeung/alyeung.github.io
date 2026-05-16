@@ -1,0 +1,289 @@
+
+<!-- map.html page with carousel -->
+
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bicycling in Seattle</title>
+  <!--
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  -->
+  
+  <!-- add github favicon -->
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+  <!-- STEP 1: Add link for Slick's CSS file here (before the slick theme and before your own CSS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <!-- STEP 2 (optional): Add link for Slick's theme file here (after the Slick CSS and before your own CSS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+        
+  <!-- footer -->    
+	<!-- add fontawesome https://fontawesome.com/get-started/web-fonts-with-css-->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  
+
+  
+    <!-- navigation bar -->
+    <nav class="sidebar">
+        <a href="#" class="close">x</a>
+        <h2>Front End Portfolio</h2>
+        <ul>
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="map.html">Bicycle Map</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+ <!--
+     <navigation class="nike-nav">
+      
+      <a href ="#intro" class='activeB'>Intro</a>
+      <a href ="#gear">Recommended Bicycle Gear</a>
+      <a href ="#shops">Great Seattle Bike Shops</a>
+      <a href ="#wish">Gear Wishlist</a>
+    
+    </navigation>
+  -->
+  
+  <!-- utilize layout from Monument Blog for inspiration-->
+  <!-- use bicycle as image -->
+  <header>
+    <!--<img src="https://placebear.com/1400/300"></img> -->
+    <h1>Bicycling in the Pacific Northwest</h1>
+  </header>
+  
+
+  
+  <!--
+  <h3>Picture of my bike</h3>
+  <h5>Fuji Cambridge</h5>
+  -->
+  <div class="welcome">
+    <p>This page showcases the implementation of a JQuery image carousel plugin.  Scroll down to the bottom and an embedded Google maps slides from right to left into view.</p>
+    <p>I dedicated this to all those who suffer from an awful car commute.  Commute habits are tough to change, but consider bicycling or mixed mode by combining with a bus ride.</p>
+    <p>For me bicycling is part of daily life now: getting exercise, seeing the neighborhood slowly, getting the best parking spot, and saving time (avoiding car congestion) and saving money.</p>
+    <p>In order for bicycling to work for you, check out the gear list below, and remember to dress in layers, bring a water shell, wear a thin hat, and gloves to stay warm.</p>
+        <i id="label-1" class="fas fa-bicycle fa-2x" alt="20-20 Cycle"></i>
+  </div>
+
+  
+  <!-- my gear -->
+  <div class="center-header">
+  <h1>Recommended Bicycle Gear</h1>
+  <p>some gear that will make your bike ride awesome</p>
+  </div>
+    <div class ="carousel-wrapper">
+      <article>
+        <img src="images/bl_map.jpg"></img>
+        <h3>Dynamo Lighting</h3>
+        <h5>Busch and Muller</h5>
+        <p>Never change a bike light battery again!  These are human powered off of the Dynamo hub on your bike.  These German made lights will stay bright when you brake, and are highly visible on the road.  I have both a rear and front light.</p>
+      </article>
+      
+      <article>
+        <!--<img src="https://placebear.com/400/300"></img>-->
+        <img src="images/mf_map.jpg"></img>
+        
+        <h3>Mud Guards / Flaps</h3>
+        <h5>Planet Bike</h5>
+        <p>Keep that road grime off your back and your gear with these reliable mud guards and flaps.</p>
+      </article>
+    
+      <article>
+        <img src="images/ks_map.jpg"></img>
+        <h3>Bicycle Brake Pads</h3>
+        <h5>Kool Stop</h5>
+        <p>These all weather high performance pads mean you will brake better under wet conditions and sudden stops in the city.</p>
+      </article>
+    
+      <article>
+        <img src="images/cont_map.jpg"></img>
+        <h3>Gator Skin Tires</h3>
+        <h5>Continental</h5>
+        <p>Proper inflation of your tire tube, paired with these tough Gator Skin tires will mean less chance of flats.  The multi-layers protects from glass and sharp punctures.</p>
+      </article>
+  </div>
+  <!-- bike shops Carousel-->
+    <div class="center-header">
+  <h1>Great Seattle Bicycle Shops</h1>
+  <p>some nice folks that do a great job on my bike</p>
+  </div>
+  <div class ="carousel-wrapper">
+    <article>
+      <img src="images/2020_map.jpg"></img>
+      <h3>20/20 Cycle</h3>
+      <h5>2020 E Union St, Seattle, WA 98122</h5>
+      <h5>(206) 568-3090</h5>
+      <p>A great shop in my neighborhood, they do great tune-ups and repairs on your current gear.  They also sell cool retro bikes and spare parts.  They are not stuck-up, work with what you got, and very friendly with your questions.  They did an awesome job installing my dynamo lighting.  Highly recommend them if you are in the area.</p>
+    </article>
+    
+    <article>
+      <img src="images/rc_map.jpg"></img>
+      <h3>Recycled Cycles</h3>
+      <h5>1007 NE Boat St, Seattle, WA 98105</h5>
+      <h5>(206) 547-4491</h5>
+      <p>Great shop near the U-district.  They do good repairs and tune-ups.  Nice place to get used spare parts for a repair.</p>
+    </article>
+    <!--
+    <article>
+      <img src="https://placebear.com/400/300"></img>
+      <h3>Electric Lady</h3>
+      <h5>TBD</h5>
+      <h5>TBD</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis neque, finibus vitae suscipit sed, gravida nec risus. Nunc in ipsum eget leo posuere vulputate.</p>
+    </article>
+  -->
+    <article>
+      <img src="images/cascade_map.jpg"></img>
+      <h3>Cascade Cycle</h3>
+      <h5>7787 62nd Ave NE Seattle, WA 98115</h5>
+      <h5>(206) 522-3222</h5>
+      <p>Go here for maintenance classes, and learning about bicycle advocacy.  Beautiful office.</p>
+    </article>
+  <!--
+    <article>
+      <img src="https://placebear.com/400/300"></img>
+      <h3>Craigslist</h3>
+      <h5>TBD</h5>
+      <h5>TBD</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis neque, finibus vitae suscipit sed, gravida nec risus. Nunc in ipsum eget leo posuere vulputate.</p>
+    </article>
+-->
+  </div>
+
+    <div class="center-header">
+  <h1>Gear Wishlist</h1>
+  <p>just some stuff I wish we all could have for our spring and summer bike rides.</p>
+  </div>
+  
+  <div class ="carousel-wrapper">  
+    <!-- wish list / bags / seats ; see if there is a card flipping animation -->
+    <article>
+      <img src="images/brooks_map.jpg"></img>
+      <h3>Bicycle Saddle</h3>
+      <h5>Brooks</h5>
+      <p>A classic leather saddle that adjusts itself to your body as you ride.</p>
+    </article>
+    
+    <article>
+      <img src="images/ortlieb_map.jpg"></img>
+      <h3>Pannier</h3>
+      <h5>Ortlieb</h5>
+      <p>Water resistant bags for the commute.  Prevent damage, and dropped packages, easy on, easy off.</p>
+    </article>
+    
+    <article>
+      <img src="images/cargo_map.jpg"></img>
+      <h3>Cargo / Electric Bike</h3>
+      <h5>Rad Bike</h5>
+      <p>Go car free.  Bring your kid, dog or wife with you for the ride.  Carry stuff, and an electric assist for the road!  Rad Bike's of Seattle shown here.</p>
+    </article>
+  </div>
+
+  <!-- relevant links -->
+  <!--<h1>Good Bicycle Links</h1>-->
+  <!--<P>Cascade Cycle</P>-->
+  <!--<P>Google Maps</P>-->
+  <!--<P>Bike Routes Seattle</P>-->
+  <!--<P>Tour Lopez</P>-->
+  
+  <!--Favorite Seattle urban rides -->
+  <!-- auto scrolling images -->
+  <!--<h1>Favorite Seattle Urban Rides</h1>-->
+  <!--<P>Capitol Hill to University District</P>-->
+  <!--<P>Bellevue, Mercer Island, to Seattle via I90 bridge</P>-->
+  <!--<P>Redmond to Seattle 520 Bridge</P>-->
+  <!--<P>Light Rail Station</P>-->
+  
+  <!-- making your commute comfy: clothing, hat, gloves,  -->
+  <!-- use a diagram like the butter/fly bug animation -->
+  <!--<h1>Key to a comfy commute</h1>-->
+  <!--<UL>-->
+  <!--  <LI>Water Shell</LI>-->
+  <!--  <LI>Dress in Layers</LI>-->
+  <!--  <LI>Hat</LI>-->
+  <!--  <LI>Gloves</LI>-->
+  <!--</UL>-->
+  
+  <!--<h1>Bicycling's great advantages</h1>-->
+
+  <!--<div class ="carousel-wrapper">  -->
+  <!-- blog section: bike commuting benefits 3 blog posts...-->
+  <!--  <Article>-->
+  <!--    <img src="https://placebear.com/400/300"></img>-->
+  <!--    <h3>Mental and Physical Health</h3>-->
+  <!--    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis neque, finibus vitae suscipit sed, gravida nec risus. Nunc in ipsum eget leo posuere vulputate.</p>-->
+  <!--  </Article>-->
+  
+  <!--  <Article>-->
+  <!--    <img src="https://placebear.com/400/300"></img>-->
+  <!--    <h3>Environmental</h3>-->
+  <!--    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis neque, finibus vitae suscipit sed, gravida nec risus. Nunc in ipsum eget leo posuere vulputate.</p>-->
+  <!--  </Article>-->
+  
+  <!--  <Article>-->
+  <!--    <img src="https://placebear.com/400/300"></img>-->
+  <!--    <h3>Save Time and Money</h3>-->
+  <!--    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis neque, finibus vitae suscipit sed, gravida nec risus. Nunc in ipsum eget leo posuere vulputate.</p>-->
+  <!--  </Article>-->
+  <!--</div>-->
+  
+  <!--<button>bike shops</button>-->
+  <!--<button>bike routes</button>-->
+  <!--<button>shortcuts</button>-->
+
+  <!-- like to have this is really hard-->
+  <!--<div id="map" style="width:400px;height:400px">My map will go here</div>-->
+  <div class="center-header">
+    <h1>Bicycle Map</h1>
+    <p>Some easy starter rides and locations of recommended bike shops.  Click the map to learn more.</p>
+    <P>Capitol Hill to University District</P>
+    <P>Bellevue, Mercer Island, to Seattle via I90 bridge</P>
+    <P>Redmond to University District across Seattle 520 Bridge</P>
+    <P>Capitol Hill to Ballard</P>
+    <p>Capitol Hill to Magnuson Park</p>
+  </div>
+  <div class="center-header">
+    <!-- google map-->
+    <!--<iframe class="butterfly" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d43026.57095863824!2d-122.26002273930659!3d47.62300770000884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1520905940610" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+    <iframe class="butterfly" src="https://www.google.com/maps/d/u/0/embed?mid=1MszWQUveT8C1uPpDAHNco7aKznMM7KI9" width="640" height="480"></iframe>
+  
+
+  </div>
+
+
+	<footer>
+		<HR>
+		<a href="https://github.com/alyeung"><i class="fab fa-github fa-2x"></i></a>
+		<a href="https://www.twitter.com/alyeung"><i class="fab fa-twitter-square fa-2x"></i></a>
+		<a href="https://www.linkedin.com/in/allanyeung"><i class="fab fa-linkedin fa-2x"></i></a>
+
+		<p>&copy;2018 <a href="feedback.html">Allan Yeung</a></p>
+	</footer>
+
+  <script src="js/jquery-1.12.0.min.js"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  -->
+
+  <!-- STEP 3: Add script tag for Slick's JS file here (after jQuery, before your own JS) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+	<script src="js/main.js"></script>
+  
+</body>
+</html>
