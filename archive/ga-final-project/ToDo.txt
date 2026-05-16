@@ -1,0 +1,21 @@
+ToDo.txt
+
+Google Map Page
+
+Figure out how to incorporate SASS multiple style sheets
+
+Get Favicon to work
+
+style modal button and background
+
+add floating white text to video banner on blog page 
+
+add in images to blog
+
+make allan links to portfolio 
+
+fix banner retracting duration
+
+add orange hover over effects for blog and links
+
+Check Css: http://pleeease.io/play/

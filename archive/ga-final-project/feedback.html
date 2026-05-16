@@ -1,0 +1,145 @@
+<!-- feedback.html -->
+
+<!-- inspiration from FEWD Feedback form -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<meta charset="utf-8">-->
+        <meta charset="utf-8" name="referrer" content="origin">
+        <title>Feedback</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- add fontawesome: https://fontawesome.com/get-started -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+        
+        <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+    
+        <!-- footer -->    
+    	<!-- add fontawesome https://fontawesome.com/get-started/web-fonts-with-css-->
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">    
+    </head>
+    <body class="feedback-background">
+        
+
+        <!-- navigation bar -->
+        <nav class="sidebar">
+            <a href="#" class="close">x</a>
+            <h2>Front End Portfolio</h2>
+            <ul>
+              <li><a href="index.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="map.html">Bicycle Map</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>        
+        </div>
+        
+        <!--<section class="contact-tile-wrapper">-->
+        <!--    <div></div>-->
+        <!--    <div>-->
+        <!--        <p>Hey there!  Thanks for coming by, please feel free to reach out to me</p>-->
+        <!--    </div>-->
+        <!--    <div></div>-->
+        <!-- find me -->
+        <!-- contact me on Github -->
+        <!--    <article><a href="https://github.com/alyeung">  -->
+        <!--        <img src="https://placebear.com/100/100"></img>-->
+        <!--        <h3>GitHub</h3>-->
+        <!--        </a>  -->
+        <!--    </article>         -->
+                
+            <!-- contact me on Linkedin -->
+        <!--    <article><a href="https://www.linkedin.com/in/allanyeung">    -->
+        <!--        <img src="https://placebear.com/100/100"></img>-->
+        <!--        <h3>LinkedIn</h3>-->
+        <!--        </a>-->
+        <!--    </article>   -->
+    
+            <!-- contact me on Twitter -->
+        <!--    <article><a href="https://www.twitter.com/alyeung">    -->
+        <!--        <img src="https://placebear.com/100/100"></img>-->
+        <!--        <h3>Twitter</h3>-->
+        <!--        </a>-->
+        <!--    </article>    -->
+        <!--</section>-->
+        <!-- Comments form: I need to speak with someone in sales -->
+        <!-- name, email, phone number, comments, submit button -->
+        
+        <div class="welcome">
+            <P>This page demonstrates my ability to create input forms, and use javascript to check the input fields before writing the information to the console and providing a warning pop-up.</P>
+            <p>This is a test form. So for bugs, questions, feedback... please file it here on <a href="https://github.com/alyeung/alyeung.github.io/issues">Github Issues</a>, or send me an email on <a href="https://www.linkedin.com/in/allanyeung">Linkedin</a>.</p>
+
+            <div class="center-header">
+                <div class="github-card" data-github="alyeung" data-width="400" data-height="" data-theme="default"></div>
+                    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                </div>
+            <div>
+
+      </div>
+
+            <form action="https://formspree.io/akyeung@hotmail.com" method="POST">
+                <fieldset>
+                    
+                    <legend>Your Contact Info</legend>
+                    
+                    <section class ="feedback-wrapper">
+            
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="Enter your name" id="name" name="name">
+                        <p id="name-error-message">Fill out your full name!</p>
+                        
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Enter your email" id="email" name="email">
+                        <p id="email-error-message">Fill out your full email!</p>
+                        
+                        <label for="phone">Phone Number</label>
+                        <input type="text" placeholder="Enter your phone number" id="phone" name="phone">
+                        <p id="phone-error-message">Fill out your phone number!</p>
+                        
+                        <hr>
+                                
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" placeholder="What comments do you have for this page?" id="comments" name="comments"></textarea>
+                        <p id="comments-error-message">Fill out your comments!</p>
+                        <hr>
+                        <button type="submit" id="submit">Submit Feedback</button>
+                    </section>
+                </fieldset>
+            </form>
+        </div> 
+        
+    
+	<footer>
+		<HR>
+		<a href="https://github.com/alyeung"><i class="fab fa-github fa-2x"></i></a>
+		<a href="https://www.twitter.com/alyeung"><i class="fab fa-twitter-square fa-2x"></i></a>
+		<a href="https://www.linkedin.com/in/allanyeung"><i class="fab fa-linkedin fa-2x"></i></a>
+
+		<p>&copy;2018 <a href="">Allan Yeung</a></p>
+	</footer>
+
+        <!--  add jquery?
+          <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+  </script>
+        -->
+        <script src="js/jquery-1.12.0.min.js"></script>
+        
+        <!-- STEP 3: Add script tag for Slick's JS file here (after jQuery, before your own JS) -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>

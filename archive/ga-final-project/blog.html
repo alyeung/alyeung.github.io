@@ -1,0 +1,233 @@
+<!-- blog.html -->
+
+<!-- use this as inspiration: https://aws.amazon.com/blogs/aws/ -->
+
+<!-- add a banner w/ motion: https://aws.amazon.com/compliance/data-center/ -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Blog Inspired by Amazon AWS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <!-- add fontawesome: https://fontawesome.com/get-started -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    
+        <!-- add favicon for github-->
+        <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+ 
+        <!-- footer -->    
+     	<!-- add fontawesome https://fontawesome.com/get-started/web-fonts-with-css-->
+    	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+ 
+        <!-- add style sheets -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+    </head>
+<body>
+    <!-- navigation bar -->
+    
+    <nav class="sidebar">
+        <a href="#" class="close">x</a>
+        <h2>Front End Portfolio</h2>
+        <ul>
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="map.html">Bicycle Map</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+<!-- video banner -->
+<!-- need to restyle with css to crop with height of 300px or so -->
+    <div class="video-container">
+        <video loop="true" autoplay="true" muted="true" preload="auto" poster="//d1.awsstatic.com/security-center/HighlightDataCenter.841c2f46da17ce9cc04dbf656b410b2515daea5a.png" src="//d1.awsstatic.com/security-center/HighlightReel_smaller_2.7cacae03ffb4db9fc7cf590cc629e1000d988826.mp4"></video>
+    </div>    
+    
+    <div class="welcome">
+    <h1>Technology Sample Blog Inspired by Amazon AWS</h1>
+    <P>This page showcases pop-up modals, when you click on the 'Read More' buttons.  The modal plays a custom Youtube video specific to the blog title and topic.  This blog is responsive, and the blog responds and adjusts to changes in screen and browser width. </P>
+    <P>The last button 'Older Posts' will take you to my present Wordpress site</P>
+    <P>Inspiration for this page was taken from Amazon Web Services Technology Blog: <a href="images/AWS_Blog_Inspiration.png">Screenshot</A></P>
+    </div>
+    <!-- Cloud 9 -->
+    <article class="blog-post">
+        <!-- div for image -->
+        <div>
+            <img src="images/cloud9.jpg"></img>
+        </div>
+        <div>
+            <h2>Working with Amazon Web Services Cloud 9</h2>
+            <h3>by Allan Yeung | on 16 MAR 2018 | <i class="fas fa-comment"></i> Comments | <i class="fas fa-share"></i>Share</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [...]</p>
+            
+            <!-- have read more play youtube video in screen on about codeCommit-->
+            <button type="button" id="showCloud9">Read More</button>
+        </div>
+    </article>
+    
+    <hr>
+    
+    <!-- Code Commit -->
+    <article class="blog-post">
+        <!-- div for image -->
+        <div>
+            <img src="images/codeCommit.jpg"></img>
+        </div>
+        <div>
+            <h2>Working with Amazon Web Services CodeCommit</h2>
+            <h3>by Allan Yeung | on 16 MAR 2018 | <i class="fas fa-comment"></i> Comments | <i class="fas fa-share"></i>Share</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [...]</p>
+            
+            <button type="button" id="showCodeCommit">Read More</button>
+        </div>
+    </article>
+    
+    <hr>
+    
+    <!-- Alexa / Lambda -->
+    <article class="blog-post">
+        <!-- div for image -->
+        <div>
+            <!-- <img src="https://placebear.com/273/137"></img> -->
+            <img src="images/alexa.jpg"></img>
+        </div>
+        <div>
+            <h2>Working with Amazon Web Services Alexa and Lambda</h2>
+    
+            <h3>by Allan Yeung | on 16 MAR 2018 | <i class="fas fa-comment"></i> Comments | <i class="fas fa-share"></i>Share</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [...]</p>
+            
+            <button type="button" id="showLambda">Read More</button>
+        </div>
+    </article>
+    
+    <hr>
+    
+    <!-- Requests / APIs Postman-->
+    <article class="blog-post">
+        <!-- div for image -->
+        <div>
+            <img src="images/postman.jpg"></img>
+        </div>
+        <div>
+            <h2>Working with Postman, Requests, and Python</h2>
+            <h3>by Allan Yeung | on 16 MAR 2018 | <i class="fas fa-comment"></i> Comments | <i class="fas fa-share"></i>Share</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [...]</p>
+            
+            <button type="button" id="showPostman">Read More</button>
+        </div>
+    </article>
+    
+    <hr>
+    
+    <!-- arrow -->
+    <div class ="button-center">
+        <button id="showWordpress"><i class="fas fa-long-arrow-alt-left"></i> Older posts</button>
+    </div>
+    <!-- cloud 9 pop up window-->
+    <div class="modal-background" id="cloud9Modal">
+        <div class="modal-content">
+          <h3>About AWS Cloud 9</h3>  
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <!-- youtube --> 
+          <div class='center-youtube'>
+            
+              <iframe id="nine" width="380" height="214" src="https://www.youtube.com/embed/FvclLeg2vEQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            
+                <!--<object style="width:380;height:214; none; clear: both; margin: 2px auto;" data="https://www.youtube.com/embed/FvclLeg2vEQ">-->
+                <!--</object>-->
+
+          </div>
+          <button id="cloud9CloseButton">Close</button>
+        </div>
+    </div>
+    
+    <!-- code commit pop up window-->
+    <div class="modal-background" id="codeCommitModal">
+        <div class="modal-content">
+          <h3>About AWS CodeCommit</h3>  
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <!-- youtube -->
+          <div class='center-youtube'>
+              
+              <iframe id="code" width="380" height="214" src="https://www.youtube.com/embed/46PRLMW8otg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              
+                <!--<object style="width:380;height:214; none; clear: both; margin: 2px auto;" data="https://www.youtube.com/embed/46PRLMW8otg">-->
+                <!--</object>-->
+          </div>
+          <button id="codeCommitCloseButton">Close</button>
+        </div>
+    </div>
+    
+    <!-- lambda pop up window -->
+    <div class="modal-background" id="lambdaModal">
+        <div class="modal-content">
+          <h3>About AWS Lambda</h3>  
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <!-- youtube --> 
+          <div class='center-youtube'>
+
+              <iframe id="lamb" width="380" height="214" src="https://www.youtube.com/embed/eOBq__h4OJ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+             <!--<object style="width:380;height:214; none; clear: both; margin: 2px auto;" data="https://www.youtube.com/embed/eOBq__h4OJ4">-->
+             <!-- </object>-->
+          </div>
+          <button id=lambdaCloseButton>Close</button>
+        </div>
+    </div>
+    
+    <!-- postman api window -->
+    <div class="modal-background" id="postmanModal">
+        <div class="modal-content">
+          <h3>About Postman</h3>  
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <!-- youtube --> 
+          <div class='center-youtube'>
+              <iframe id ="post" width="380" height="214" src="https://www.youtube.com/embed/pfoKFaHisbY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                <!--<object style="width:380;height:214; none; clear: both; margin: 2px auto;" data="https://www.youtube.com/embed/pfoKFaHisbY">-->
+                <!--</object>-->
+          </div>
+          <button id="postmanCloseButton">Close</button>
+        </div>
+    </div>    
+    
+    <!-- see my wordpress blog -->
+    <div class="modal-background" id="wordpressModal">
+        <div class="modal-content">
+          <h3>WordPress Blog</h3>  
+          <p>Click here to go to my wordpress blog about personal finance, programming, and do it yourself projects: </p>
+          <a href='https://www.aainsights.com/'>AAInsights.com</a>
+          <p></p>
+          <!-- youtube --> 
+         <button id="wordpressCloseButton">Close</button>
+        </div>
+    </div>    
+    
+	<footer>
+		<HR>
+		<a href="https://github.com/alyeung"><i class="fab fa-github fa-2x"></i></a>
+		<a href="https://www.twitter.com/alyeung"><i class="fab fa-twitter-square fa-2x"></i></a>
+		<a href="https://www.linkedin.com/in/allanyeung"><i class="fab fa-linkedin fa-2x"></i></a>
+
+		<p>&copy;2018 <a href="feedback.html">Allan Yeung</a></p>
+	</footer>
+
+    <!-- javascript -->
+    <script src="js/jquery-1.12.0.min.js"></script>
+    
+    	<!-- STEP 3: Add script tag for Slick's JS file here (after jQuery, before your own JS) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

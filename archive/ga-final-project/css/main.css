@@ -1,0 +1,449 @@
+/* main.scss */
+/* @import 'first'       //first.scss
+   @import 'secondary'  //secondary.scss
+   
+   SASS --watch main.scss: main.css
+*/
+/* fonts */
+/* Add a link to GOOGLE FONTS LINK at the top! THis should be the first line of your stylesheet.
+
+https://fonts.google.com/specimen/Lato
+*/
+@import url("https://fonts.googleapis.com/css?family=Lato|Raleway:400,600");
+/* how to use SASS + benefits: https://sass-lang.com/guide */
+/* colors
+
+Flat UI:
+ https://color.adobe.com/Flat-UI-color-theme-2469224/?showPublished=true
+
+Uber Color Scheme:
+ http://www.color-hex.com/color-palette/11602
+
+Amazon Fire:
+https://developer.amazon.com/public/solutions/devices/fire-phone/docs/color-and-typography
+*/
+/* --------------------------------------------------------------------------
+Base styles:
+----------------------------------------------------------------------------- */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box; }
+
+/* this helps the slide in menu to be full height of the browser window/body */
+html, body {
+  height: 100%; }
+
+body {
+  font-family: Raleway;
+  background-color: #FFFFFF; }
+
+/* Fix for responsive images */
+img {
+  max-width: 100%; }
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: black;
+  /*text color */
+  outline: none;
+  border-radius: 3px; }
+
+/* style welcome section */
+.welcome {
+  padding: 5% 30% 0 30%;
+  background: #FFFFFF; }
+
+.center-header {
+  text-align: center; }
+
+/* style blog post picture side by side */
+.blog-post {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  /* ensure the article does not consume the whole page width */ }
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr; }
+
+.aside-wrapper {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.deal-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* two rows of 3 each */
+  /* spacing vertically is 75 px between next section */
+  padding: 75px 25px;
+  grid-column-gap: 5%; }
+
+article {
+  display: block;
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  /* white border around article */
+  /*margin: 15px 15px;  article to article spacing, adds grey */
+  margin: 30px auto;
+  /* center articles */
+  /* style buttons for article */ }
+
+/* blog.html */
+.video-container {
+  overflow: hidden;
+  /* hide over flow */
+  height: 400px;
+  margin: auto;
+  /* align center */
+  padding: 0 5% 0 5%;
+  /* top right bottom left */ }
+
+/* side bar menu */
+.hamburger {
+  cursor: pointer;
+  display: block; }
+
+.line {
+  border-bottom: 4px solid #bbb;
+  width: 35px;
+  margin-bottom: 6px; }
+
+.line:last-child {
+  margin-bottom: 10px; }
+
+nav {
+  width: 300px;
+  height: 100%;
+  background-color: #3399CC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 0; }
+
+nav h2 {
+  padding: 1.5rem 1rem 0; }
+
+h2 {
+  color: rgba(0, 0, 0, 0.4); }
+
+li {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  list-style: none;
+  transition: all 300ms ease-in-out; }
+
+li:hover {
+  background-color: #3090c0; }
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  padding: 1rem;
+  display: block; }
+
+nav li:first-child {
+  margin-top: 2em; }
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-transform: none;
+  font-size: 20px; }
+
+.sidebar {
+  	/* STEP #1: Right now the sidebar is always showing!
+    How can we move it off screen by default? Hint: look up translateX*/
+  transform: translateX(-300px);
+  /* STEP #4 (Wait until you've tested everything else):
+  How can we make the sidebar animate from the side, instead of jumping right away? */ }
+
+.active {
+  	/*	STEP #2: When the active class gets added to the sidebar,
+    we want to move the sidebar back on screen using the transform property (translateX). */
+  transform: translateX(300px);
+  transition: all 0.5s ease-in-out; }
+
+/* modal */
+.modal-background {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* chapter 7 */
+  position: fixed;
+  /* stays in place while user scrolls */
+  /* https://stackoverflow.com/questions/28080910/what-does-top-0-left-0-bottom-0-right-0-mean */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* use flexbox Google: https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /*center button and content in modal */
+  /* modal button styling */ }
+  .modal-background button {
+    color: white;
+    /*text color */
+    background-color: #3399CC;
+    border: none; }
+
+.modal-content {
+  padding: 40px 20px;
+  color: #444;
+  background-color: #FFFFFF;
+  width: 60%;
+  display: grid;
+  /* close button fix for modal */
+  text-align: center; }
+
+.center-youtube {
+  /* used to center youtube iframe contents */
+  margin: auto; }
+
+/* style input fields for feedback from */
+form {
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 20px 40px 40px; }
+
+/* style input header forms */
+legend {
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 22px;
+  padding-bottom: 15px; }
+
+/* hide border */
+fieldset {
+  border: 0px; }
+
+label {
+  padding-left: 0px; }
+
+/* style input text fields */
+input[type=text] {
+  padding: 10px;
+  /* tabbed in */
+  width: 100%;
+  margin-top: 10px;
+  /* space out input and labels */
+  margin-bottom: 10px; }
+
+/* style text area */
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px; }
+
+.feedback-wrapper {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.feedback-background {
+  background-color: #F8F8F8; }
+
+.contact-tile-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 60%;
+  margin: 0 auto; }
+
+/* media query for responsiveness */
+@media screen and (max-width: 660px) {
+  .blog-post {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* make vertically tiled */ }
+
+  /* handle when the screen is quite tiny we cannot afford to have the width be 60% */
+  .modal-content {
+    width: 97%; }
+
+  /* style modal boxes */
+  .deal-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; }
+
+  .bottomNav {
+    float: right;
+    display: block; }
+
+  .video-container video {
+    width: 100%;
+    height: auto; }
+
+  /* style youtube videos to be narrower*/
+  iframe {
+    width: 85%;
+    height: auto; }
+
+  .carousel-wrapper {
+    max-width: 100%; }
+
+  form {
+    width: 98%; }
+
+  .welcome {
+    padding: 0 0 1% 1%;
+    background: #FFFFFF; }
+
+  /* handle maps narrowing */
+  /*
+    .slick-slider
+    {
+         margin: 0; 
+         padding: 0;
+         width: 100%;
+         height: auto;
+    }
+    */
+  /* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/ }
+.button-center {
+  margin-left: 40%;
+  margin-right: 40%; }
+
+/* carousel */
+/*Some styles to center the carousel and
+make sure it doesn't take up the full width of the page*/
+.carousel-wrapper {
+  max-width: 30%;
+  margin: 0 auto 30px; }
+
+/*Some styles to center the carousel and
+make sure it doesn't take up the full width of the page*/
+.slick-next:before,
+.slick-prev:before {
+  /* Change arrow color */
+  color: #2875FA;
+  /* Change arrow size */
+  /*font-size: 30px;*/ }
+
+/* index.html nav */
+section:nth-of-type(odd) {
+  background-color: #dfdfdf; }
+
+section:nth-of-type(even) {
+  background-color: #F07057; }
+
+.sectionHeight {
+  height: 100%; }
+
+.section-inner {
+  padding: 40px;
+  display: table-cell;
+  vertical-align: middle; }
+
+navigation {
+  position: fixed;
+  background: black;
+  width: 100%;
+  text-align: center;
+  bottom: 0; }
+
+navigation a {
+  color: #fff;
+  height: 50px;
+  padding: 0 10px;
+  line-height: 50px;
+  display: inline-block;
+  text-decoration: none;
+  color: #999;
+  margin: 0 10px; }
+
+navigation a:hover {
+  color: white; }
+
+.activeB {
+  background-color: #00AEEF;
+  color: white; }
+
+.bottomNav {
+  overflow: hidden; }
+
+footer {
+  text-align: center;
+  margin: 80px;
+  /* ensures it is not hidden, and nice spacing */ }
+
+/* map header */
+header {
+  background-image: url("../images/blog_header_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  text-align: center; }
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 37px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white; }
+
+/* bicyle nav */
+.bike-nav {
+  width: 100%;
+  text-align: center;
+  transition: all 300ms ease-out;
+  position: fixed;
+  top: 0;
+  z-index: 100; }
+
+/*map placement */
+/*#label-1 {
+  position: absolute;
+  opacity: 0;
+}*/
+/*
+#label-1 {
+  top: 148px;
+  right: -116px;
+}
+
+.labelshow{
+  opacity: 1;
+  transition: all .5s ease-in-out; 
+}
+*/
+.butterfly {
+  width: 600px;
+  /* PART 3: Uncomment the following code to hide the
+  butterfly and move it slightly to the left by default.*/
+  transform: translateX(-30%);
+  opacity: 0;
+  transition: all 2s ease-in-out; }
+
+.animated {
+  /* PART 3: Add the animated class to the .butterfly when the user has scrolled to that section of the page. */
+  /* Here, when the animated class gets added, we want to update the opacity to 1
+  and move the butterfly into place by using translateX to set the X-axis to 0. You'll need to add CSS below to do so.*/
+  opacity: 1;
+  transform: translateX(5%); }
+
+.warn {
+  border: 1px solid red; }
+
+/* input form feedback from */
+/* hide warning message */
+form p {
+  margin-top: 0;
+  color: #FF3846;
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
